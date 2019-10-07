@@ -1,0 +1,202 @@
+//==================== section
+[class*="section-"] {
+	position: relative;
+	z-index: 1;
+}
+
+.btn-yellow{
+	display: inline-block;
+	width: 244px;
+	height: 65px;
+	box-shadow: 0 4px 0 #dbcd00;
+	border-radius: 2px;
+	background-color: #ffed00;
+	text-align: center;
+	color: #181818 !important;
+	font: 500 16px/65px 'Exo';
+	text-transform: uppercase;
+	@extend .btn-ghost;
+}
+
+//==================== section heading
+.section-heading {
+	padding: 295px 0 135px;
+	position: relative;
+
+	.wrapper-heading-slider{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 1077px;
+
+		&:after{
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: #000000;
+			opacity: 0.59;
+			z-index: 1;
+		}
+
+
+		.background-heading{
+			width: 100%;
+			height: 1077px;
+
+			&.i-1{
+				background: url("../images/header-bg.jpg") 50% 50% no-repeat;
+				-webkit-background-size: cover;
+				background-size: cover;
+			}
+
+			&.i-2{
+				background: url("../images/form-bg.jpg") 50% 50% no-repeat;
+				-webkit-background-size: cover;
+				background-size: cover;
+			}
+
+			&.i-3{
+				background: url("../images/header-bg.jpg") 50% 50% no-repeat;
+				-webkit-background-size: cover;
+				background-size: cover;
+			}
+
+			&.i-4{
+				background: url("../images/form-bg.jpg") 50% 50% no-repeat;
+				-webkit-background-size: cover;
+				background-size: cover;
+			}
+		}
+
+		.heading-pagination{
+			bottom: 78px !important;
+		}
+	}
+
+	.small-text{
+		text-align: center;
+		font: 500 29px/29px 'Exo';
+		margin-bottom: 35px;
+	}
+
+	h1 {
+		text-transform: uppercase;
+		font: 600 70px/87px 'Exo';
+		margin-bottom: 35px;
+		text-align: center;
+	}
+
+	.address-text{
+		text-align: center;
+		font: 500 29px/29px 'Exo';
+		margin-bottom: 75px;
+	}
+
+	.more-block{
+		display: block;
+		margin: 0 auto;
+		width: 700px;
+
+		.btn-yellow{
+			display: inline-block;
+			width: 244px;
+			height: 65px;
+			box-shadow: 0 4px 0 #dbcd00;
+			border-radius: 2px;
+			background-color: #ffed00;
+			text-align: center;
+			color: #181818 !important;
+			font: 500 16px/65px 'Exo';
+			text-transform: uppercase;
+			@extend .btn-ghost;
+		}
+
+		.more-block__text{
+			display: inline-block;
+			vertical-align: top;
+			float: right;
+			font: 300 19px/24px 'Exo';
+			font-style: italic;
+			width: 415px;
+		}
+	}
+
+	.last-wrapper{
+		width: 890px;
+		margin: 88px auto 0;
+		display: flex;
+		justify-content: space-between;
+
+		.last-wrapper__block{
+			display: inline-block;
+			width: 173px;
+
+			.title{
+				display: block;
+				font: 500 38px/38px 'Exo';
+				margin-bottom: 13px;
+			}
+
+			.text{
+				font: 300 15px/22px 'Exo';
+			}
+		}
+	}
+}
+
+
+//==================== section-green
+.section-green{
+	background-color: #0e403d;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	.container{
+		width: 1170px;
+	}
+
+	.title{
+		font: 500 32px/55px 'Exo';
+		display: inline-block;
+	}
+
+	.btn-white{
+		display: inline-block;
+		width: 244px;
+		height: 65px;
+		border-radius: 2px;
+		border: 1px solid #ffffff;
+		background-color: transparent !important;
+		text-align: center;
+		color: #ffffff !important;
+		font: 500 16px/65px 'Exo';
+		text-transform: uppercase;
+		margin-top: -5px;
+
+		&:hover{
+			@include general-transition;
+			border: 2px solid #ffed00;
+			background-color: #ffed00 !important;
+			color: #181818 !important;
+		}
+	}
+}
+
+//==================== section x
+.section-x {
+	background: url('../images/') no-repeat 50% 50% transparent;
+	padding: 0px 0 0px;
+
+	h2 {
+		margin-bottom: 0px;
+	}
+}
+
+//==================== section map
+.map-holder {
+  	height: 0px;
+}

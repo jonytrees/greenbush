@@ -1,0 +1,84 @@
+//====================global header
+.layout-header {
+  @include abs-center;
+  //@include abs-center-fixed;
+  bottom: auto;
+  z-index: 50;
+  padding-top: 55px;
+  color: #fff;
+
+  .container{
+    width: 1170px;
+  }
+
+  &.active {
+
+  }
+
+  .si-phone {
+    padding-top: 0px;
+  }
+
+
+  .logo {
+    display: inline-block;
+
+    img {
+      display: block;
+    }
+  }
+
+  .si-phone {
+    display: inline-block;
+
+    .phone-link {
+      display: block;
+      font: 500 27px/27px 'Exo';
+      margin-bottom: 22px;
+      color: #fff !important;
+    }
+
+    .consult {
+      display: block;
+      width: 239px;
+      height: 58px;
+      border-radius: 2px;
+      border: 2px solid #ffffff;
+      text-align: center;
+      color: #fff !important;
+      font: 300 17px/55px 'Exo';
+
+      &:hover{
+        @include general-transition;
+        border: 2px solid #ffed00;
+        background-color: #ffed00;
+        color: #181818 !important;
+      }
+    }
+  }
+
+  .nav {
+    width: 520px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+
+    li {
+      display: inline-block;
+
+      &:not(:first-child) {
+        margin-left: 0px;
+      }
+    }
+
+    a {
+      color: #fff;
+      font: 500 18px/18px 'Exo';
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
