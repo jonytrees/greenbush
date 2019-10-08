@@ -1,9 +1,52 @@
 //====================global footer
 .layout-footer {
-	padding: 0px 0 0px;
+	background-color: #292a29;
+	padding: 67px 0 67px;
+
+	.container{
+		width: 1170px;
+	}
+
+	.logo{
+		display: inline-block;
+		margin-right: 50px;
+	}
+
+	.logo-text{
+		display: inline-block;
+		vertical-align: top;
+		color: #ffffff;
+		font: 300 16px/26px 'Exo';
+	}
 
 	.si-phone {
-		padding-top: 0px;
+		display: inline-block;
+		margin-top: 10px;
+
+		.phone-link {
+			display: block;
+			font: 500 27px/27px 'Exo';
+			margin-bottom: 22px;
+			color: #fff !important;
+		}
+
+		.consult {
+			display: block;
+			width: 239px;
+			height: 58px;
+			border-radius: 2px;
+			border: 2px solid #ffffff;
+			text-align: center;
+			color: #fff !important;
+			font: 300 17px/55px 'Exo';
+
+			&:hover{
+				@include general-transition;
+				border: 2px solid #ffed00;
+				background-color: #ffed00;
+				color: #181818 !important;
+			}
+		}
 	}
 }
 

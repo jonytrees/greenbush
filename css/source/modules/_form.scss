@@ -1,13 +1,13 @@
 //==================== section form
 .section-form {
-	background: no-repeat 50% 50% transparent;
+	background: fixed url("../images/form-bg.jpg") 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding-top: 177px;
+	padding-bottom: 184px;
 
-	.btn-holder {
-		margin-top: 0px;
-	}
-
-	.btn {
-		width: 300px;
+	.container{
+		width: 1167px;
 	}
 }
 
@@ -28,5 +28,53 @@
 
 	h2 {
 		margin-bottom: 0px;
+	}
+}
+
+
+//==================== form-white
+.form-white{
+	width: 100%;
+	box-shadow: 0 6px 27px 8px rgba(24, 24, 24, 0.1);
+	border-radius: 6px;
+	border: 1px solid #e8e8e8;
+	background-color: #ffffff;
+	padding: 74px 80px 70px 75px;
+
+	h2{
+		letter-spacing: 1.63px;
+		font: 700 65px/74px 'Exo';
+		margin-bottom: 30px;
+	}
+
+	.sub_title{
+		letter-spacing: 0.82px;
+		font: 500 33px/33px 'Exo';
+		display: block;
+		margin-bottom: 24px;
+	}
+
+	.arrow{
+		width: 83px;
+		height: 49px;
+		display: block;
+	}
+
+	input{
+		width: 100%;
+		color: #181818 !important;
+		font: 500 17px/17px 'Exo';
+		padding-bottom: 56px;
+		border-bottom: 1px solid #d1d1d1 !important;
+		margin-bottom: 30px;
+	}
+
+	.form-agree-check{
+		color: #555555;
+		margin-top: 30px;
+		width: 90%;
+		font: 500 14px/20px 'Exo';
+		letter-spacing: 0.35px;
+		margin-bottom: 40px;
 	}
 }

@@ -63,16 +63,16 @@ jQuery(function ($) {
         removeTransform($('.si-floating4'), 'si-floating4');
 
         // Mobile stretch
-        $('html, body').css('min-width', '1280px').addClass('mobile');
-        $('html').css('width', window.innerWidth + 'px');
+        // $('html, body').css('min-width', '1280px').addClass('mobile');
+        // $('html').css('width', window.innerWidth + 'px');
 
-        //$('html').css('width', window.innerWidth + 'px');
-        //$(window).resize(function () {
-        //    $('html').css('width', window.innerWidth + 'px');
-        //});
-        //$(window).bind('scroll', function () {
-        //    $('html').css('width', window.innerWidth + 'px');
-        //});
+        $('html').css('width', window.innerWidth + 'px');
+        $(window).resize(function () {
+           $('html').css('width', window.innerWidth + 'px');
+        });
+        $(window).bind('scroll', function () {
+           $('html').css('width', window.innerWidth + 'px');
+        });
 
         // ===================================================== All sound load
         $.ionSound({
@@ -255,7 +255,7 @@ jQuery(function ($) {
 
     if($('html').find('.review-slider-holder')){
         var reviewSlider = new Swiper('.review-slider', {
-            slidesPerView: 1,
+            slidesPerView: 3,
             spaceBetween: 20,
             pagination: {
                 el: '.review-pagination',
@@ -266,9 +266,57 @@ jQuery(function ($) {
                 prevEl: '.review-prev',
             },
             loop: true,
-            effect: 'fade',
             autoplay: {
                 delay: 5000,
+            },
+            on: {
+                slideChange: function() {
+                    $.ionSound.play('wuf-1');
+                }
+            }
+        });
+    }
+
+    if($('html').find('.experience-slider-holder')){
+        var experienceSlider = new Swiper('.experience-slider', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            pagination: {
+                el: '.experience-pagination',
+                clickable: true,
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.experience-next',
+                prevEl: '.experience-prev',
+            },
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
+            on: {
+                slideChange: function() {
+                    $.ionSound.play('wuf-1');
+                }
+            }
+        });
+    }
+
+    if($('html').find('.data-slider-holder')){
+        var dataSlider = new Swiper('.data-slider', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            pagination: {
+                el: '.data-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.data-next',
+                prevEl: '.data-prev',
+            },
+            loop: true,
+            autoplay: {
+                delay: 500000,
             },
             on: {
                 slideChange: function() {

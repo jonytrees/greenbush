@@ -291,6 +291,26 @@ ul.marked {
 	}
 }
 
+.review-pagination{
+	bottom: -82px;
+
+	.swiper-pagination-bullet {
+		@include general-transition;
+		background-color: #dddddd !important;
+		width: 9px;
+		height: 9px;
+		opacity: 1 !important;
+		margin: 0 4px;
+		border: 0 !important;
+
+		&:hover,
+		&:active,
+		&.swiper-pagination-bullet-active {
+			background-color: #292929 !important;
+		}
+	}
+}
+
 //====================helper classes
 //clearfix
 .clearfix {

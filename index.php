@@ -7,8 +7,8 @@ header('Content-Type: text/html; charset=utf-8');
 header('X-UA-Compatible: IE=edge');
 include 'functions.php';
 
-$title = 'Title';
-$desc = 'Description';
+$title = 'GreenBushDC';
+$desc = 'Надежный центр обработки данных для вашего бизнеса';
 $url = SI_CurrentPageURL();
 $image = SI_CurrentPageImage();
 ?>
@@ -31,8 +31,8 @@ $image = SI_CurrentPageImage();
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- Favicon -->
-    <link rel="icon" href="favicon.png" type="image/png">
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
 
 
     <!-- CSS styles -->
@@ -72,10 +72,10 @@ $image = SI_CurrentPageImage();
 
                 <div class="col-2-4">
                     <ul class="nav">
-                        <li><a href="">Характеристики</a></li>
-                        <li><a href="">Услуги</a></li>
-                        <li><a href="">Отзывы</a></li>
-                        <li><a href="">Архитектура</a></li>
+                        <li><a href="#green" class="si-jump">Характеристики</a></li>
+                        <li><a href="#service" class="si-jump">Услуги</a></li>
+                        <li><a href="#review" class="si-jump">Отзывы</a></li>
+                        <li><a href="#data" class="si-jump">Архитектура</a></li>
                     </ul>
                 </div>
 
@@ -445,7 +445,7 @@ $image = SI_CurrentPageImage();
                                     от
                                 </span>
                                     <div class="price-text">
-                                        25 000 Р
+                                        25 000
                                     </div>
                                     <span>
                                     за 1 стойку
@@ -477,7 +477,7 @@ $image = SI_CurrentPageImage();
                                     от
                                 </span>
                                     <div class="price-text">
-                                        25 000 Р
+                                        25 000
                                     </div>
                                     <span>
                                     за 1 стойку
@@ -558,7 +558,8 @@ $image = SI_CurrentPageImage();
                         •<span class="empty"></span>Выделенные сервера до 88 ядер/176 потоков, до 6 TB RAM.
                     </div>
                     <div class="list">
-                        •<span class="empty"></span>Блэйд "blade" сервера ( возможна установка дополнительно StorageBlade или TapeBlade).
+                        •<span class="empty"></span>Блэйд "blade" сервера ( возможна установка дополнительно
+                        StorageBlade или TapeBlade).
                     </div>
                     <div class="list">
                         •<span class="empty"></span>Удаленное управление через ILO (public IP with ACL или VPN).
@@ -653,7 +654,10 @@ $image = SI_CurrentPageImage();
 
                                 <div class="answer">
                                     <p>
-                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                                        начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        При создании генератора мы использовали небезизвестный универсальный код речей.
                                     </p>
                                 </div>
                             </div>
@@ -677,7 +681,10 @@ $image = SI_CurrentPageImage();
 
                                 <div class="answer">
                                     <p>
-                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                                        начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        При создании генератора мы использовали небезизвестный универсальный код речей.
                                     </p>
                                 </div>
                             </div>
@@ -700,7 +707,10 @@ $image = SI_CurrentPageImage();
 
                                 <div class="answer">
                                     <p>
-                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                                        начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        При создании генератора мы использовали небезизвестный универсальный код речей.
                                     </p>
                                 </div>
                             </div>
@@ -723,7 +733,10 @@ $image = SI_CurrentPageImage();
 
                                 <div class="answer">
                                     <p>
-                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                                        начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        При создании генератора мы использовали небезизвестный универсальный код речей.
                                     </p>
                                 </div>
                             </div>
@@ -756,7 +769,10 @@ $image = SI_CurrentPageImage();
 
                                 <div class="answer">
                                     <p>
-                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                                        начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        При создании генератора мы использовали небезизвестный универсальный код речей.
                                     </p>
                                 </div>
                             </div>
@@ -780,7 +796,10 @@ $image = SI_CurrentPageImage();
 
                                 <div class="answer">
                                     <p>
-                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                                        начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        При создании генератора мы использовали небезизвестный универсальный код речей.
                                     </p>
                                 </div>
                             </div>
@@ -804,7 +823,10 @@ $image = SI_CurrentPageImage();
 
                                 <div class="answer">
                                     <p>
-                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                                        начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        При создании генератора мы использовали небезизвестный универсальный код речей.
                                     </p>
                                 </div>
                             </div>
@@ -828,7 +850,10 @@ $image = SI_CurrentPageImage();
 
                                 <div class="answer">
                                     <p>
-                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                                        начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        При создании генератора мы использовали небезизвестный универсальный код речей.
                                     </p>
                                 </div>
                             </div>
@@ -861,7 +886,10 @@ $image = SI_CurrentPageImage();
 
                                 <div class="answer">
                                     <p>
-                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                                        начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        При создании генератора мы использовали небезизвестный универсальный код речей.
                                     </p>
                                 </div>
                             </div>
@@ -874,7 +902,7 @@ $image = SI_CurrentPageImage();
                                         <div class="minus">-</div>
                                     </div>
                                     <div class="number">
-                                       02.
+                                        02.
                                     </div>
                                     <div class="questions-text">
                                         У нас две серверные стойки, но администраторы на удаленной работе, поэтому самим
@@ -885,7 +913,10 @@ $image = SI_CurrentPageImage();
 
                                 <div class="answer">
                                     <p>
-                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                                        начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        При создании генератора мы использовали небезизвестный универсальный код речей.
                                     </p>
                                 </div>
                             </div>
@@ -909,7 +940,10 @@ $image = SI_CurrentPageImage();
 
                                 <div class="answer">
                                     <p>
-                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                                        начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        При создании генератора мы использовали небезизвестный универсальный код речей.
                                     </p>
                                 </div>
                             </div>
@@ -933,7 +967,10 @@ $image = SI_CurrentPageImage();
 
                                 <div class="answer">
                                     <p>
-                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                                        начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        При создании генератора мы использовали небезизвестный универсальный код речей.
                                     </p>
                                 </div>
                             </div>
@@ -966,7 +1003,10 @@ $image = SI_CurrentPageImage();
 
                                 <div class="answer">
                                     <p>
-                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                                        начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        При создании генератора мы использовали небезизвестный универсальный код речей.
                                     </p>
                                 </div>
                             </div>
@@ -990,7 +1030,10 @@ $image = SI_CurrentPageImage();
 
                                 <div class="answer">
                                     <p>
-                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                                        начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        При создании генератора мы использовали небезизвестный универсальный код речей.
                                     </p>
                                 </div>
                             </div>
@@ -1014,7 +1057,10 @@ $image = SI_CurrentPageImage();
 
                                 <div class="answer">
                                     <p>
-                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                                        начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        При создании генератора мы использовали небезизвестный универсальный код речей.
                                     </p>
                                 </div>
                             </div>
@@ -1038,7 +1084,10 @@ $image = SI_CurrentPageImage();
 
                                 <div class="answer">
                                     <p>
-                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                                        начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        При создании генератора мы использовали небезизвестный универсальный код речей.
                                     </p>
                                 </div>
                             </div>
@@ -1099,63 +1148,48 @@ $image = SI_CurrentPageImage();
 
                         <!-- single slide -->
                         <div class="swiper-slide">
-                            <img src="images/review-1.jpg" alt=" " class="img-block">
+                            <a href="images/review-1.jpg" class="border-block" data-fancybox="review">
+                                <img src="images/review-1.jpg" alt=" " class="img-block">
+                            </a>
+
                         </div>
 
                         <!-- single slide -->
                         <div class="swiper-slide">
-                            <img src="images/review-2.jpg" alt=" " class="img-block">
+                            <a href="images/review-2.jpg" class="border-block" data-fancybox="review">
+                                <img src="images/review-2.jpg" alt=" " class="img-block">
+                            </a>
                         </div>
 
                         <!-- single slide -->
                         <div class="swiper-slide">
-                            <img src="images/review-3.jpg" alt=" " class="img-block">
+                            <a href="images/review-3.jpg" class="border-block i-3" data-fancybox="review">
+                                <img src="images/review-3.jpg" alt=" " class="img-block">
+                            </a>
                         </div>
 
                         <!-- single slide -->
                         <div class="swiper-slide">
-                            <img src="images/review-1.jpg" alt=" " class="img-block">
+                            <a href="images/review-1.jpg" class="border-block" data-fancybox="review">
+                                <img src="images/review-1.jpg" alt=" " class="img-block">
+                            </a>
                         </div>
 
                         <!-- single slide -->
                         <div class="swiper-slide">
-                            <img src="images/review-2.jpg" alt=" " class="img-block">
+                            <a href="images/review-2.jpg" class="border-block" data-fancybox="review">
+                                <img src="images/review-2.jpg" alt=" " class="img-block">
+                            </a>
                         </div>
 
                         <!-- single slide -->
                         <div class="swiper-slide">
-                            <img src="images/review-3.jpg" alt=" " class="img-block">
+                            <a href="images/review-3.jpg" class="border-block i-3" data-fancybox="review">
+                                <img src="images/review-3.jpg" alt=" " class="img-block">
+                            </a>
                         </div>
 
-                        <!-- single slide -->
-                        <div class="swiper-slide">
-                            <img src="images/review-1.jpg" alt=" " class="img-block">
-                        </div>
 
-                        <!-- single slide -->
-                        <div class="swiper-slide">
-                            <img src="images/review-2.jpg" alt=" " class="img-block">
-                        </div>
-
-                        <!-- single slide -->
-                        <div class="swiper-slide">
-                            <img src="images/review-3.jpg" alt=" " class="img-block">
-                        </div>
-
-                        <!-- single slide -->
-                        <div class="swiper-slide">
-                            <img src="images/review-1.jpg" alt=" " class="img-block">
-                        </div>
-
-                        <!-- single slide -->
-                        <div class="swiper-slide">
-                            <img src="images/review-2.jpg" alt=" " class="img-block">
-                        </div>
-
-                        <!-- single slide -->
-                        <div class="swiper-slide">
-                            <img src="images/review-3.jpg" alt=" " class="img-block">
-                        </div>
                     </div>
                 </div>
 
@@ -1164,14 +1198,14 @@ $image = SI_CurrentPageImage();
 
                 <!-- Add Arrows -->
                 <div class="button-block">
-                    <div class="swiper-button-next review-next">
-                        <div class="icon_block">
-<!--                            --><?php //include("svg/left_arrow.svg"); ?>
+                    <div class="swiper-button-prev review-prev">
+                        <div class="left-grey-arrow">
+                            <?php include("svg/left2.svg"); ?>
                         </div>
                     </div>
-                    <div class="swiper-button-prev review-prev">
-                        <div class="icon_block">
-<!--                            --><?php //include("svg/left_arrow.svg"); ?>
+                    <div class="swiper-button-next review-next">
+                        <div class="right-grey-arrow">
+                            <?php include("svg/rigt2.svg"); ?>
                         </div>
                     </div>
                 </div>
@@ -1179,164 +1213,375 @@ $image = SI_CurrentPageImage();
         </div>
     </section>
 
-    <!--===================================================== section x -->
-    <section class="section-x" id="x">
+    <!--===================================================== section experience -->
+    <section class="section-experience" id="experience">
+        <div class="container">
+            <h1>
+                Обладаем большим опытом
+            </h1>
+
+            <div class="wrapper-experience-slider">
+                <!-- Swiper -->
+                <div class="swiper-container experience-slider">
+                    <div class="swiper-wrapper">
+
+                        <!-- single slide -->
+                        <div class="swiper-slide">
+                            <img src="images/experience-img.jpg" alt=" ">
+                            <div class="title">
+                                Тут будет название кейса
+                            </div>
+
+                            <a href="#" class="btn btn-yellow">подробнее</a>
+
+                        </div>
+
+                        <!-- single slide -->
+                        <div class="swiper-slide">
+                            <img src="images/experience-img.jpg" alt=" ">
+                            <div class="title">
+                                Тут будет название кейса
+                            </div>
+
+                            <a href="#" class="btn btn-yellow">подробнее</a>
+
+                        </div>
+
+                        <!-- single slide -->
+                        <div class="swiper-slide">
+                            <img src="images/experience-img.jpg" alt=" ">
+                            <div class="title">
+                                Тут будет название кейса
+                            </div>
+
+                            <a href="#" class="btn btn-yellow">подробнее</a>
+
+                        </div>
+
+                    </div>
+                    <!--            Pagination-->
+                    <div class="swiper-pagination experience-pagination"></div>
+                </div>
+
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-prev experience-prev">
+                    <div class="left-grey-arrow">
+                        <?php include("svg/left2.1.svg"); ?>
+                    </div>
+                </div>
+                <div class="swiper-button-next experience-next">
+                    <div class="right-grey-arrow">
+                        <?php include("svg/right2.1.svg"); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--===================================================== section data -->
+    <section class="section-data" id="data">
+        <div class="container">
+            <h1>
+                О дата-центре
+            </h1>
+
+            <div class="sub_title">
+                Архитектурно ЦОД представляет собой конструкцию из трех модулей по три этажа. Один этаж — это два (Блок
+                А2) или три (Блоки А1, А3) машинных зала, которые соединяются с технологическими помещениями.
+            </div>
+
+            <a href="#" class="btn btn-grey">
+                Малый бизнес
+            </a>
+            <a href="#" class="btn btn-grey i-1">
+                Машинный зал
+            </a>
+        </div>
+
+        <div class="wrapper-data-slider">
+            <!-- Swiper -->
+            <div class="swiper-container data-slider">
+                <div class="swiper-wrapper">
+
+                    <!-- single slide -->
+                    <div class="swiper-slide">
+                        <div class="data-bg"></div>
+                    </div>
+
+                    <!-- single slide -->
+                    <div class="swiper-slide">
+                        <div class="data-bg"></div>
+                    </div>
+
+                    <!-- single slide -->
+                    <div class="swiper-slide">
+                        <div class="data-bg"></div>
+                    </div>
+
+                </div>
+
+
+                <!-- Add Arrows -->
+                <div class="btn-block">
+                    <div class="container">
+                        <div class="swiper-button-prev data-prev">
+                            <div class="left-grey-arrow">
+                                <?php include("svg/left2.1.svg"); ?>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next data-next">
+                            <div class="right-grey-arrow">
+                                <?php include("svg/right2.1.svg"); ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--===================================================== section square -->
+    <section class="section-square" id="square">
+        <div class="container">
+            <div class="square-wrapper">
+                <div class="square-block">
+                    <div class="title">
+                        2 Га
+                    </div>
+                    <div class="line-white"></div>
+                    <div class="text">
+                        земельный <br>
+                        участок
+                    </div>
+                </div>
+                <div class="square-block">
+                    <div class="title">
+                        18 800 м2
+                    </div>
+                    <div class="line-white"></div>
+                    <div class="text">
+                        общая площадь<br>
+                        зданий
+                    </div>
+                </div>
+                <div class="square-block">
+                    <div class="title">
+                        3 240 м2
+                    </div>
+                    <div class="line-white"></div>
+                    <div class="text">
+                        административно-<br>
+                        офисная часть зданий
+                    </div>
+                </div>
+            </div>
+            <div class="square-wrapper">
+                <div class="square-block">
+                    <div class="title">
+                        4 460 м2
+                    </div>
+                    <div class="line-white"></div>
+                    <div class="text">
+                        площадь машинных<br>
+                        залов
+                    </div>
+                </div>
+                <div class="square-block">
+                    <div class="title">
+                        350 м2
+                    </div>
+                    <div class="line-white"></div>
+                    <div class="text">
+                        помещения сборки<br>
+                        клиентского оборудования
+                    </div>
+                </div>
+                <div class="square-block">
+                    <div class="title">
+                        1 470 м2
+                    </div>
+                    <div class="line-white"></div>
+                    <div class="text">
+                        склады
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--===================================================== section infrastructure -->
+    <section class="section-infrastructure" id="infrastructure">
+        <div class="container">
+            <h1>
+                Отказоустойчивая <br>
+                инфраструктура
+            </h1>
+
+            <div class="infrastructure-wrapper">
+                <img src="images/block-img-1.jpg" alt=" " class="infrastructure-img">
+                <div class="infrastructure-block">
+                    <div class="title">
+                        Собственная служба
+                        безопасности
+                    </div>
+                    <div class="line-yellow"></div>
+                    <div class="text">
+                        Круглосуточная охрана, 3 уровня системы контроля, более 300 камер видеонаблюдения.
+                    </div>
+                </div>
+            </div>
+            <div class="infrastructure-wrapper">
+                <img src="images/block-img-2.jpg" alt=" " class="infrastructure-img">
+                <div class="infrastructure-block i-2">
+                    <div class="title">
+                        Энергия от собственных
+                        подстанций ОЭЗ
+                    </div>
+                    <div class="line-yellow"></div>
+                    <div class="text">
+                        Для каждой из 6 независимых электрических цепей предусмотрен отдельный дизель-роторный источник бесперебойного питания DRUPS Hitec Power Protection по 1670 кВА.
+                    </div>
+                </div>
+            </div>
+            <div class="infrastructure-wrapper">
+                <img src="images/block-img-3.jpg" alt=" " class="infrastructure-img">
+                <div class="infrastructure-block">
+                    <div class="title">
+                        Первая степень
+                        огнестойкости
+                    </div>
+                    <div class="line-yellow"></div>
+                    <div class="text">
+                        Все машинные залы и помещения с критически важным оборудованием оснащены централизованной системой газового пожаротушения.
+                    </div>
+                </div>
+            </div>
+            <div class="infrastructure-wrapper">
+                <img src="images/block-img-4.jpg" alt=" " class="infrastructure-img">
+                <div class="infrastructure-block i-1">
+                    <div class="title">
+                        Постоянный контроль
+                        над микроклиматом
+                    </div>
+                    <div class="line-yellow"></div>
+                    <div class="text">
+                        Холодоснабжение 6-ти машинных залов осуществляется адиабатическими установками,
+                        со схемой резервирования N+1 и дополнительными фреоновыми дохолаживающими прецизионными шкафными кондиционерами.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===================================================== section form-first -->
+    <section class="section-form form-first" id="form-first">
         <div class="container">
 
-            <h2>
-                <span class="big"></span>
-            </h2>
-
-            <a href="https://www.youtube.com/watch?v=XOIfBhSmoOc&amp;autoplay=1" class="review-item"
-               data-fancybox="review">
-                <img src="http://img.youtube.com/vi/XOIfBhSmoOc/0.jpg" alt=" ">
-                <!--            --><?php //include('svg/icon-play.svg'); ?>
-            </a>
-
-            <div class="tabs-block price-block align-center" data-tab-block="t-price">
-
-                <ul class="nav nav-tabs">
-                    <li class="tab-link active" data-tab="t-price-1" data-tab-block="t-price">
-                    </li>
-
-                    <li class="tab-link" data-tab="t-price-2" data-tab-block="t-price">
-                    </li>
-                </ul>
-
-                <div class="tabs-content-container">
-
-                    <!-- ================================================ price tab 1-->
-                    <div class="tab-content active" data-tab="t-price-1" data-tab-block="t-price">
-
-                    </div>
-
-                    <!-- ================================================ price tab 2-->
-                    <div class="tab-content" data-tab="t-price-2" data-tab-block="t-price">
-
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!--===================================================== section form-x -->
-    <section class="section-form form-x" id="form-x">
-        <div class="container align-center">
-
-            <h2>
-
-            </h2>
-
-            <p>
-
-            </p>
-
-            <form method="post" class="send-form" autocomplete="off">
+            <form method="post" class="send-form form-white" autocomplete="off">
                 <div class="row">
-                    <div class="col-1-3">
-                        <input type="text" name="client_name" class="client-name" placeholder="Ваше имя">
+                    <div class="col-1-2">
+                        <h2>
+                            Закажите
+                            консультацию
+                            ведущего
+                            специалиста
+                        </h2>
+
+                        <div class="sub_title">
+                            Ответ через 15 минут
+                        </div>
+
+                        <div class="arrow">
+                            <div class="right-arrow-yellow">
+                                <?php include('svg/right4.svg'); ?>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-1-2">
+                        <input type="text" name="client_name" class="client-name" placeholder="Ваше имя*">
 
-                    <div class="col-1-3">
-                        <input type="tel" name="client_phone" class="client-phone" placeholder="Ваш телефон">
+                        <input type="tel" name="client_phone" class="client-phone" placeholder="Ваш телефон*">
+
+                        <input type="email" name="client_mail" class="client-mail" placeholder="Ваш e-mail*">
+
+                        <input type="hidden" name="send_type" class="send-type" value="2">
+                        <input type="hidden" name="send_extra" class="send-extra" value="1">
+                        <input type="hidden" name="key" value="<?php echo $_SESSION['sf_key'] ?>">
+                        <?php //Поле выше для защиты формы от спам-ботов ?>
+
+                        <!-- Agreement -->
+                        <div class="form-agree align-left">
+                            <label class="checkbox-label form-agree-check checked">
+                                <input type="checkbox" checked>
+                                Нажимая кнопку "Заказать консультацию" я принимаю
+                                условия политики конфиденциальности.
+                            </label>
+                        </div>
+
+                        <div class="btn-holder">
+                            <button type="submit" class="btn btn-yellow">Заказать консультацию</button>
+                            <!--<div class="g-recaptcha" id="g-recaptcha"></div>-->
+                        </div>
                     </div>
-
-                    <div class="col-1-3">
-                        <input type="email" name="client_mail" class="client-mail" placeholder="Ваш e-mail">
-                    </div>
-                </div>
-
-                <input type="hidden" name="send_type" class="send-type" value="2">
-                <input type="hidden" name="send_extra" class="send-extra" value="1">
-                <input type="hidden" name="key" value="<?php echo $_SESSION['sf_key'] ?>">
-                <?php //Поле выше для защиты формы от спам-ботов ?>
-
-                <div class="btn-holder">
-                    <button type="submit" class="btn">Позвоните мне</button>
-                    <!--<div class="g-recaptcha" id="g-recaptcha"></div>-->
-                </div>
-
-                <!-- Agreement -->
-                <div class="form-agree align-left">
-                    <label class="checkbox-label form-agree-check checked">
-                        <input type="checkbox" checked>
-                        Нажимая кнопку "ПОЗВОНИТЕ МНЕ", я&nbsp;даю своё согласие на&nbsp;обработку
-                        моих персональных данных в&nbsp;соответствии с&nbsp;Федеральным законом
-                        от&nbsp;27.07.2006&nbsp;года №152&#8209;ФЗ "О&nbsp;персональных данных",
-                        на&nbsp;условиях и&nbsp;для&nbsp;целей, определённых
-                        в&nbsp;Согласии на&nbsp;обработку персональных данных.
-                    </label>
                 </div>
             </form>
-
         </div>
     </section>
-
-    <!--===================================================== section map -->
-    <div class="section-map">
-        <div class="map-holder" id="map"></div>
-    </div>
-
 
     <!--===================================================== Footer -->
     <footer class="layout-footer">
         <div class="container">
             <div class="row">
 
-                <!-- company info block -->
-                <div class="col-1-2">
-                    <div class="company-info-block">
-                        <address>
-                            <dl>
-                                <dt>Адрес:</dt>
-                                <dd></dd>
-                            </dl>
-                        </address>
+                <!-- Logo -->
+                <div class="col-3-4">
+                    <a href="#" class="logo si-jump">
+                        <img src="images/logo.png" alt=" ">
+                    </a>
 
-                        <dl>
-                            <dt>ИНН:</dt>
-                            <dd></dd>
-                        </dl>
-
-                        <dl>
-                            <dt>ОГРН:</dt>
-                            <dd></dd>
-                        </dl>
-
-                        <p>
-                            <a href="mailto:info@domen.ru">info@domen.ru</a>
-                        </p>
+                    <div class="logo-text">
+                        ООО "Сток-сервис" <br>
+                        Москва,г. Зеленоград, Проезд №683, д. 8 <br>
+                        ОГРН: 1234567890123
                     </div>
                 </div>
+
 
                 <!-- Phone block -->
-                <div class="col-1-2 align-right">
+                <div class="col-1-4 align-right">
                     <div class="si-phone">
-                        <div class="si-phone-text">Звонок бесплатный</div>
-                        <a href="tel:+78009001111" class="phone-link dark">8 (800) 900-11-11</a>
-                        <a href="#" class="open-phone-modal" data-extra="2">Заказать консультацию</a>
+                        <a href="tel:+78003501500" class="phone-link">8 800 350-15-00</a>
+                        <a href="#" class="open-phone-modal consult" data-extra="1">Заказать консультацию</a>
                     </div>
                 </div>
-            </div>
 
+            </div>
+        </div>
+    </footer>
+
+    <!--===================================================== section-last -->
+    <section class="section-last" id="#last">
+        <div class="container">
             <div class="copyright-holder row">
-                <div class="col-1-2">
-                    <a href="#" class="dark open-text-modal" data-id="1">
-                        Согласие на обработку персональных данных
+                <div class="col-3-4">
+                    <a href="#" class="dark">
+                        Данный сайт носит информационно-справочный характер и ни при каких условиях не является публичной офертой
                     </a>
                 </div>
 
                 <!-- copyright block -->
-                <div class="col-1-2 align-right">
-                    <a href="http://hello-brand.ru/" class="dark" target="_blank" rel="nofollow noopener">
-                        Разработано в "Hello, brand!"
+                <div class="col-1-4 align-right">
+                    <a href="http://hello-brand.ru/" class="dark link" target="_blank" rel="nofollow noopener">
+                        ©2019. Hello, brand! Все права защищены.
                     </a>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
 
 
     <!--===================================================== Modals -->
@@ -1351,22 +1596,22 @@ $image = SI_CurrentPageImage();
 
         <!--============================================== success modal -->
         <div class="si-success-modal si-success-modal-1">
-            <a href="#" class="si-close"></a>
+            <a href="#" class="si-close success-close"></a>
 
             <div class="modal-container align-center">
 
                 <div class="si-success-modal-title">
-                    Спасибо!
+                    Спасибо! <br>
+                    Ваша заявка отправлена
                 </div>
+
+                <div class="line-yellow"></div>
 
                 <div class="success-time">
-                    Наш менеджер свяжется с вами в течение 15 минут
+                    Наш менеджер свяжется с Вами <br>
+                    в ближайшее время.
                 </div>
 
-                <p>
-                    <strong>Время работы отдела продаж:</strong>
-                    пн-пт с 10.00 до 20.00 (по Москве)
-                </p>
 
             </div>
         </div>
@@ -1375,49 +1620,55 @@ $image = SI_CurrentPageImage();
         <div class="si-modal phone-modal">
             <a href="#" class="si-close"></a>
 
-            <div class="modal-container align-center">
-
-                <div class="modal-form-title">
-                    Закажите консультацию
-                </div>
-
-                <div class="modal-time">
-                    Ответ в течение 15 минут
-                </div>
+            <div class="modal-container">
 
                 <form method="post" class="send-form" autocomplete="off">
                     <div class="row">
                         <div class="col-1-2">
-                            <input type="text" name="client_name" class="client-name" placeholder="Ваше имя">
-                        </div>
+                            <div class="modal-form-title">
+                                Закажите
+                                консультацию
+                                консультацию
+                                ведущего
+                                специалиста
+                            </div>
 
+                            <div class="modal-time">
+                                Ответ через 15 минут
+                            </div>
+
+                            <div class="arrow">
+                                <div class="right-arrow-yellow">
+                                    <?php include('svg/right4.svg'); ?>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-1-2">
-                            <input type="tel" name="client_phone" class="client-phone" placeholder="Ваш телефон">
+                            <input type="text" name="client_name" class="client-name" placeholder="Ваше имя*">
+
+                            <input type="tel" name="client_phone" class="client-phone" placeholder="Ваш телефон*">
+
+                            <input type="email" name="client_mail" class="client-mail" placeholder="Ваш e-mail*">
+
+                            <input type="hidden" name="send_type" class="send-type" value="2">
+                            <input type="hidden" name="send_extra" class="send-extra" value="1">
+                            <input type="hidden" name="key" value="<?php echo $_SESSION['sf_key'] ?>">
+                            <?php //Поле выше для защиты формы от спам-ботов ?>
+
+                            <!-- Agreement -->
+                            <div class="form-agree align-left">
+                                <label class="checkbox-label form-agree-check checked">
+                                    <input type="checkbox" checked>
+                                    Нажимая кнопку "Заказать консультацию" я принимаю
+                                    условия политики конфиденциальности.
+                                </label>
+                            </div>
+
+                            <div class="btn-holder">
+                                <button type="submit" class="btn btn-yellow">Заказать консультацию</button>
+                                <!--<div class="g-recaptcha" id="g-recaptcha"></div>-->
+                            </div>
                         </div>
-                    </div>
-
-                    <textarea name="client_message" class="client-message" placeholder="Ваш вопрос"></textarea>
-
-                    <input type="hidden" name="send_type" class="send-type" value="1">
-                    <input type="hidden" name="send_extra" class="send-extra" value="1">
-                    <input type="hidden" name="key" value="<?php echo $_SESSION['sf_key'] ?>">
-                    <?php //Поле выше для защиты формы от спам-ботов ?>
-
-                    <div class="btn-holder">
-                        <button type="submit" class="btn">Позвоните мне</button>
-                        <!--<div class="g-recaptcha" id="g-recaptcha"></div>-->
-                    </div>
-
-                    <!-- Agreement -->
-                    <div class="form-agree align-left">
-                        <label class="checkbox-label form-agree-check checked">
-                            <input type="checkbox" checked>
-                            Нажимая кнопку "ПОЗВОНИТЕ МНЕ", я&nbsp;даю своё согласие на&nbsp;обработку
-                            моих персональных данных в&nbsp;соответствии с&nbsp;Федеральным законом
-                            от&nbsp;27.07.2006&nbsp;года №152&#8209;ФЗ "О&nbsp;персональных данных",
-                            на&nbsp;условиях и&nbsp;для&nbsp;целей, определённых
-                            в&nbsp;Согласии на&nbsp;обработку персональных данных.
-                        </label>
                     </div>
                 </form>
 

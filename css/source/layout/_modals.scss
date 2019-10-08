@@ -18,7 +18,7 @@ html {
 .si-overlay {
 	@include abs-center-fixed;
 	display: none;
-	background: transparentize(#000, .2);
+	background: transparentize(#fff, .2);
 	z-index: 203;
 }
 
@@ -45,8 +45,13 @@ html {
 	@extend .icon;
 	@extend .close !optional;
 	position: absolute !important;
-	top: 30px;
-	right: 30px;
+	top: -28px;
+	right: 0;
+
+	&.success-close{
+		top: -48px;
+		right: -20px;
+	}
 }
 
 //==================== modal - basic
@@ -56,11 +61,14 @@ html {
 	transition-duration: 0.5s;
 	display: none;
 	position: relative;
-	color: $font-color;
+	color: #181818;
 	background: #fff;
-	padding: 20px 20px 20px;
-	width: 500px;
+	padding: 74px 80px 70px 75px;
+	width: 1167px;
 	margin: 50px auto;
+	border: 1px solid #e8e8e8;
+	box-shadow: 0 6px 27px 8px rgba(24, 24, 24, 0.1);
+	border-radius: 6px;
 
 	&.si-visible {
 		@include transform(scale(1));
@@ -73,15 +81,45 @@ html {
 	.btn {
 		min-width: 300px;
 	}
+
+	.modal-form-title{
+		letter-spacing: 1.63px;
+		font: 700 65px/74px 'Exo';
+		margin-bottom: 30px;
+	}
+
+	.modal-time{
+		letter-spacing: 0.82px;
+		font: 500 33px/33px 'Exo';
+		display: block;
+		margin-bottom: 24px;
+	}
+
+	.arrow{
+		width: 83px;
+		height: 49px;
+		display: block;
+	}
+
+	input{
+		width: 100%;
+		color: #181818 !important;
+		font: 500 17px/17px 'Exo';
+		padding-bottom: 56px;
+		border-bottom: 1px solid #d1d1d1 !important;
+		margin-bottom: 30px;
+	}
+
+	.form-agree-check{
+		color: #555555;
+		margin-top: 30px;
+		width: 90%;
+		font: 500 14px/20px 'Exo';
+		letter-spacing: 0.35px;
+		margin-bottom: 40px;
+	}
 }
 
-.modal-form-title {
-  	margin-bottom: 0px;
-}
-
-.modal-time {
-  	margin-bottom: 0px;
-}
 
 //==================== modal - text
 .modal-text-block {
@@ -91,6 +129,15 @@ html {
 //==================== modal - success
 .si-success-modal {
 	@extend .si-modal;
+	width: 700px;
+	height: 483px;
+	border: 20px solid #000000;
+	background-color: #ffffff;
+	padding-top: 130px;
+	border-radius: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 
 	strong {
 		display: block;
@@ -99,10 +146,22 @@ html {
 
 .si-success-modal-title {
   	@extend .modal-form-title !optional;
+	color: #131313;
+	font: 600 37px/37px 'Exo' !important;
+}
+
+.line-yellow{
+	display: block;
+	margin: 15px auto 23px;
+	width: 58px;
+	height: 5px;
+	background-color: #ffed00;
 }
 
 .success-time {
   	@extend .modal-time !optional;
+	font: 500 24px/29px 'Exo' !important;
+	color: #3e3e3e;
 }
 
 //==================== message

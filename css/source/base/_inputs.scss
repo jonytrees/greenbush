@@ -124,19 +124,19 @@ textarea {
 .checkbox-label {
 	display: block;
 	text-align: left;
-	padding-left: 24px;
+	padding-left: 40px;
 	position: relative !important;
 }
 
 .jq-checkbox {
-	width: 14px;
-	height: 14px;
-	background: #ededed;
-	border: 1px solid #b4b6b8 !important;
+	width: 21px;
+	height: 21px;
+	background: #ffed00;
+	border: 2px solid #ffed00 !important;
 	border-radius: 2px;
 	margin: 0;
 	position: absolute !important;
-	top: 4px;
+	top: 8px !important;
 	left: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
@@ -146,13 +146,13 @@ textarea {
 	@include general-transition;
 	@include abs-center;
 	display: inline-block !important;
-	width: 8px !important;
-	height: 8px !important;
-	background: $font-color !important;
+	width: 12px !important;
+	height: 10px !important;
+	background: #ffed00 !important;
 	border-radius: 1px !important;
 	//width: 9px !important;
 	//height: 6px !important;
-	//background: url('../images/checkbox-bg.png') no-repeat 50% 50% transparent !important;
+	background: url('../svg/checked.svg') no-repeat 50% 50% !important;
 	//border-radius: 0 !important;
 	opacity: 0;
 	-webkit-box-shadow: none !important;

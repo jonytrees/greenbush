@@ -8,6 +8,14 @@
 	vertical-align: middle;
 }
 
+.icon-zoom {
+	width: 60px;
+	height: 60px;
+	background: url('../svg/icon-zoom.svg') no-repeat transparent;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
 .will-change {
 	background: none;
 
@@ -69,9 +77,11 @@
 }
 
 .close {
-	width: 24px !important;
-	height: 24px !important;
-	fill: $font-color;
+	width: 28px !important;
+	height: 28px !important;
+	background: url("../images/cancel.png") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 
 	a:hover &,
 	a:active & {
