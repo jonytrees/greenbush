@@ -1,0 +1,19 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{font-family:'Exo2.0-Bold';}
+	.st1{font-size:185.3171px;}
+</style>
+<path d="M60,63h30v30H60V63z"/>
+<path d="M120,63h30v30h-30V63z"/>
+<path d="M180,63h30v30h-30V63z"/>
+<path d="M270,63h60v30h-60V63z"/>
+<path d="M60,243h30v30H60V243z"/>
+<path d="M120,243h30v30h-30V243z"/>
+<path d="M180,243h30v30h-30V243z"/>
+<path d="M270,243h60v30h-60V243z"/>
+<path d="M390,153V0H0v153h30v30H0v150h180v30h-30v30H0v30h150v30h90v-30h58.3c0.2-10,0.5-20,0.8-30H240v-30h-30v-30h113.5v-30H30
+	v-90h330v60.4c9.5-1.2,18.9-0.7,28.2,0.5c0.6-0.2,1.2-0.4,1.8-0.6V183h-30v-30H390z M210,423h-30v-30h30V423z M330,183H60v-30h270
+	V183z M30,123V30h330v93H30z"/>
+<text transform="matrix(1 0 0 1 337.083 434.5502)" class="st0 st1">2</text>
+</svg>
