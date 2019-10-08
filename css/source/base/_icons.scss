@@ -78,3 +78,87 @@
 		fill: $accent-color;
 	}
 }
+
+.light-builb,
+.celsius{
+	.yellow{
+		fill:#FFED00;
+	}
+}
+
+.data{
+	.yellow{
+		fill:#FFED00;
+	}
+	.st1{
+		font-family: 'Exo';
+	}
+	.st2{
+		font-size:185.3171px;
+	}
+}
+
+.flash{
+	.yellow{
+		fill:#FFED00;
+	}
+}
+
+.left-arrow,
+.right-arrow{
+	.black{
+		stroke:#000000;
+		stroke-width:8;
+		stroke-miterlimit:10;
+	}
+}
+
+.left-white-arrow,
+.right-white-arrow{
+	.white{
+		fill:#ffffff;
+	}
+}
+
+.left-grey-arrow,
+.right-grey-arrow{
+	.grey{
+		fill:#E4E6E6;
+		stroke:#E4E6E6;
+		stroke-width:8;
+		stroke-miterlimit:10;
+	}
+}
+
+.plug,
+.computing{
+	.yellow{
+		fill:#FFED00;
+	}
+	.black{
+		stroke:#000000;
+		stroke-width:5;
+		stroke-miterlimit:10;
+	}
+}
+
+.protection{
+	.yellow{
+		fill:#FFED00;
+	}
+}
+
+.right-arrow-yellow{
+	.yellow{
+		fill:#FFED00;
+	}
+}
+
+.device{
+	.yellow{
+		fill:#FFED00;
+	}
+	.black{
+		fill:#030303;
+	}
+}

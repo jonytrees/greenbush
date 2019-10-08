@@ -1,7 +1,24 @@
 //==================== tabs
 .nav.nav-tabs {
 	width: 100%;
-	text-align: center;
+	margin-bottom: 57px;
+
+	.tab-link{
+		display: inline-block;
+		background-color: rgba(255, 255, 255, 0.05);
+		text-align: center;
+		height: 63px;
+		color: #fff;
+		font: 500 20px/63px 'Exo';
+		padding-left: 20px;
+		padding-right: 20px;
+		width: auto;
+		margin-right: 13px;
+
+		&.active{
+			border-bottom: 3px solid #ffed00;
+		}
+	}
 }
 
 .tab-link {
@@ -11,7 +28,22 @@
 
 .tabs-content-container {
 	width: 100%;
+	height: 350px;
 	overflow: hidden;
+	position: absolute;
+	border-radius: 12px;
+	background-color: #ffffff;
+	box-shadow: 0 10px 25px rgba(24, 24, 24, 0.07);
+	padding: 60px;
+}
+
+.tabs-question{
+	height: auto;
+	position: relative;
+	background-color: transparent;
+	box-shadow: none;
+	padding: 0;
+	border-radius: 3px;
 }
 
 .tab-content {

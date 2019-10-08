@@ -1,7 +1,7 @@
 <?php
 //Две строчки ниже для защиты форм от спам-ботов
 session_start();
-$_SESSION['sf_key'] = md5(substr( session_id(), mt_rand(0,10), mt_rand(3,10) ) . time() ); 
+$_SESSION['sf_key'] = md5(substr(session_id(), mt_rand(0, 10), mt_rand(3, 10)) . time());
 
 header('Content-Type: text/html; charset=utf-8');
 header('X-UA-Compatible: IE=edge');
@@ -11,40 +11,6 @@ $title = 'Title';
 $desc = 'Description';
 $url = SI_CurrentPageURL();
 $image = SI_CurrentPageImage();
-
-//https://sypexgeo.net/ru/about/
-if (file_exists('SxGeo.php')) {
-    include 'SxGeo.php';
-    $web_time = '';
-
-    $SxGeo = new SxGeo('SxGeo.dat');
-    $SxGeoCity = new SxGeo('SxGeoCity.dat');
-    $ip = $_SERVER['REMOTE_ADDR'];
-    $country = $SxGeo->getCountry($ip);
-    $region = $SxGeoCity->getCityFull($ip);
-    $regionCity = $region["city"]["name_ru"];
-
-    if ($country == "RU") {
-        $web_time = '12:00';
-        switch ($regionCity) {
-            case 'Калининград':
-                $web_time = '10:00';
-                break;
-            case 'Москва':
-                $web_time = '11:00';
-                break;
-            case 'Санкт-Петербург':
-                $web_time = '11:00';
-                break;
-        }
-    } else if ($country == "UA") {
-        $web_time = '10:00';
-    } else if ($country == "BY") {
-        $web_time = '11:00';
-    } else {
-        $web_time = '12:00 по Москве';
-    }
-}
 ?>
 
 <!doctype html>
@@ -87,36 +53,10 @@ if (file_exists('SxGeo.php')) {
     <!-- Page title -->
     <title><?php echo $title; ?> | <?php echo $desc; ?></title>
 
-
 </head>
-
 
 <body id="main">
 <div id="global-wrapper">
-
-    <!--===================================================== Loader -->
-    <!--    <div class="loader">-->
-    <!--        <div class="pseudo-table">-->
-    <!--            <div class="pseudo-table-cell align-center">-->
-    <!---->
-    <!--                <div class="a-loader a-loader-2">-->
-    <!--                    <div class="bar-1"></div>-->
-    <!--                    <div class="bar-2"></div>-->
-    <!--                    <div class="bar-3"></div>-->
-    <!--                    <div class="bar-4"></div>-->
-    <!--                    <div class="bar-5"></div>-->
-    <!--                    <div class="bar-6"></div>-->
-    <!--                    <div class="bar-7"></div>-->
-    <!--                    <div class="bar-8"></div>-->
-    <!--                </div>-->
-    <!---->
-    <!--                <div class="loader-text">-->
-    <!--                    загрузка-->
-    <!--                </div>-->
-    <!---->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
 
     <!--===================================================== Header -->
     <header class="layout-header">
@@ -182,7 +122,7 @@ if (file_exists('SxGeo.php')) {
                 </div>
             </div>
 
-<!--            Pagination-->
+            <!--            Pagination-->
             <div class="swiper-pagination heading-pagination"></div>
         </div>
 
@@ -270,6 +210,975 @@ if (file_exists('SxGeo.php')) {
         </div>
     </section>
 
+    <!--===================================================== section technical -->
+    <section class="section-technical" id="technical">
+        <div class="container">
+            <div class="row">
+                <div class="col-3-4">
+                    <div class="title">
+                        Технические характеристики
+                    </div>
+                    <div class="text">
+                        Инженерная инфраструктура проекта полностью соответствует
+                        требованиям «Уровня 3» (Tier III) по классификации Uptime Institute.
+                    </div>
+                    <a href="#" class="btn btn-yellow">Смотреть сертификат</a>
+                </div>
+                <div class="col-1-4 align-right">
+                    <img src="images/technical-img.png" alt=" " class="technical-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===================================================== section options -->
+    <section class="section-options" id="options">
+        <div class="container">
+            <h1>
+                Гарантированные
+                эксплуатационные параметры
+            </h1>
+            <div class="row">
+                <div class="col-1-4">
+                    <div class="options-block">
+                        <div class="options-block__icon i-1">
+                            <?php include('svg/light-bulb.svg'); ?>
+                        </div>
+                        <div class="options-block__title">
+                            1 категория
+                        </div>
+                        <div class="options-block__text">
+                            электроснабжения оборудования
+                            и инженерной инфраструктуры
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-4">
+                    <div class="options-block">
+                        <div class="options-block__icon i-2">
+                            <?php include('svg/protection.svg'); ?>
+                        </div>
+                        <div class="options-block__title">
+                            50±0,2 Гц
+                        </div>
+                        <div class="options-block__text">
+                            гарантированная
+                            частота электропитания
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-4">
+                    <div class="options-block">
+                        <div class="options-block__icon i-3">
+                            <?php include('svg/plug.svg'); ?>
+                        </div>
+                        <div class="options-block__title">
+                            210-230В
+                        </div>
+                        <div class="options-block__text">
+                            напряжение на вводах
+                            электропитания
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-4">
+                    <div class="options-block">
+                        <div class="options-block__icon i-4">
+                            <?php include('svg/flash.svg'); ?>
+                        </div>
+                        <div class="options-block__title">
+                            15 кВт
+
+                        </div>
+                        <div class="options-block__text">
+                            максимальная
+                            потребляемая мощность
+                            на стойку
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-4">
+                    <div class="options-block">
+                        <div class="options-block__icon i-5">
+                            <?php include('svg/data.svg'); ?>
+                        </div>
+                        <div class="options-block__title">
+                            2 штуки
+                        </div>
+                        <div class="options-block__text">
+                            количество лучей, подведённых
+                            к каждому серверному шкафу
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-4">
+                    <div class="options-block">
+                        <div class="options-block__icon i-6">
+                            <?php include('svg/celsius.svg'); ?>
+                        </div>
+                        <div class="options-block__title">
+                            22–27С°
+                        </div>
+                        <div class="options-block__text">
+                            гарантированная
+                            температура в
+                            холодных коридорах
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-4">
+                    <div class="options-block">
+                        <div class="options-block__icon i-7">
+                            <?php include('svg/computing.svg'); ?>
+                        </div>
+                        <div class="options-block__title margin-top">
+                            30–70%
+                        </div>
+                        <div class="options-block__text">
+                            относительная влажность
+                            в области размещения
+                            оборудования
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-4">
+                    <div class="options-block">
+                        <div class="options-block__icon i-8">
+                            <?php include('svg/device.svg'); ?>
+                        </div>
+                        <div class="options-block__title">
+                            2258х800
+                            х1200
+                        </div>
+                        <div class="options-block__text a-1">
+                            максимальные параметры
+                            размещаемых стоек (мм)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===================================================== section options -->
+    <section class="section-service" id="service">
+        <div class="container">
+            <div class="wrapper">
+                <h1>
+                    Наши услуги
+                </h1>
+                <div class="tabs-block service-block" data-tab-block="t-service">
+
+                    <ul class="nav nav-tabs">
+                        <li class="tab-link active" data-tab="t-service-1" data-tab-block="t-service">
+                            Colocation
+                        </li>
+
+                        <li class="tab-link" data-tab="t-service-2" data-tab-block="t-service">
+                            VDS
+                        </li>
+
+                        <li class="tab-link" data-tab="t-service-3" data-tab-block="t-service">
+                            Аренда помещений
+                        </li>
+                    </ul>
+
+                    <div class="tabs-content-container">
+
+                        <!-- ================================================ service tab 1-->
+                        <div class="tab-content active" data-tab="t-service-1" data-tab-block="t-service">
+                            <div class="tab-header">
+                                <h3>
+                                    COLOCATION
+                                </h3>
+                                <div class="sub_title">
+                                    Размещение сервера с обеспечением
+                                    доступа к сети интернет
+                                </div>
+                            </div>
+                            <div class="tab-text">
+                                <div class="text">
+                                    Услуга Colocation ("Колокейшн") позволяет разместить удаленно серверное оборудование
+                                    клиента в условиях резервированных каналов связи и бесперебойного электропитания. К
+                                    вашим серверам всегда будет быстрый доступ, так как дата центр Green Bush находится
+                                    в Москве.
+                                </div>
+                                <div class="price-block">
+                                <span>
+                                    от
+                                </span>
+                                    <div class="price-text">
+                                        25 000
+                                        <!--                                        <span>-->
+                                        <?php //include('svg/ruble.svg'); ?><!--</span>-->
+                                        <!--                                        <span>₽</span>-->
+                                    </div>
+                                    <span>
+                                    за 1 стойку
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ================================================ service tab 2-->
+                        <div class="tab-content" data-tab="t-service-2" data-tab-block="t-service">
+                            <div class="tab-header">
+                                <h3>
+                                    COLOCATION
+                                </h3>
+                                <div class="sub_title">
+                                    Размещение сервера с обеспечением
+                                    доступа к сети интернет
+                                </div>
+                            </div>
+                            <div class="tab-text">
+                                <div class="text">
+                                    Услуга Colocation ("Колокейшн") позволяет разместить удаленно серверное оборудование
+                                    клиента в условиях резервированных каналов связи и бесперебойного электропитания. К
+                                    вашим серверам всегда будет быстрый доступ, так как дата центр Green Bush находится
+                                    в Москве.
+                                </div>
+                                <div class="price-block">
+                                <span>
+                                    от
+                                </span>
+                                    <div class="price-text">
+                                        25 000 Р
+                                    </div>
+                                    <span>
+                                    за 1 стойку
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ================================================ service tab 3-->
+                        <div class="tab-content" data-tab="t-service-3" data-tab-block="t-service">
+                            <div class="tab-header">
+                                <h3>
+                                    COLOCATION
+                                </h3>
+                                <div class="sub_title">
+                                    Размещение сервера с обеспечением
+                                    доступа к сети интернет
+                                </div>
+                            </div>
+                            <div class="tab-text">
+                                <div class="text">
+                                    Услуга Colocation ("Колокейшн") позволяет разместить удаленно серверное оборудование
+                                    клиента в условиях резервированных каналов связи и бесперебойного электропитания. К
+                                    вашим серверам всегда будет быстрый доступ, так как дата центр Green Bush находится
+                                    в Москве.
+                                </div>
+                                <div class="price-block">
+                                <span>
+                                    от
+                                </span>
+                                    <div class="price-text">
+                                        25 000 Р
+                                    </div>
+                                    <span>
+                                    за 1 стойку
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="more-block">
+                    <div class="text">
+                        Ответим на вопросы и поможем построить
+                        IT-инфраструктуру для вашего бизнеса.
+                    </div>
+                    <a href="#" class="btn btn-yellow">
+                        Узнать больше
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--===================================================== section include -->
+    <section class="section-include" id="include">
+        <div class="container">
+            <h3>
+                Что включено
+            </h3>
+            <div class="row">
+                <div class="col-1-2">
+                    <div class="list">
+                        •<span class="empty"></span>Серверный Шкаф исполнителя 600x1070 42U, 2 независимых ввода,
+                        2PDU по
+                        9евро-розеток.
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>Сервис “SmartHands” 24/7 включен в стоимость (перезагрузка серверов,
+                        коммутация оборудования, визуальный контроль) по обращению в Техническую поддержку.
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>Бесплатная доставка оборудования в наш ЦОД из любой точки России.
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>Подключение к портам 100Мбит/с 1G/10G.
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>Круглосуточный доступ к оборудованию.
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>Круглосуточная техническая поддержка 24/7.
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>Качественная связь и минимальный ping.
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>Утилизация упаковки от оборудования включена в стоимость
+                        размещения оборудования в ЦОД.
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>Оборудование корпоративного класса Hewlett Packard Enterprise под
+                        любые задачи - от небольшой файловой базы 1С до проекта по внедрению SAP
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>Стоечные "rack" сервера
+                    </div>
+                </div>
+                <div class="col-1-2">
+                    <div class="list">
+                        •<span class="empty"></span>Локальная сеть 1/10G.
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>HPC кластера.
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>Выделенные сервера до 88 ядер/176 потоков, до 6 TB RAM.
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>Блэйд "blade" сервера ( возможна установка дополнительно StorageBlade или TapeBlade).
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>Удаленное управление через ILO (public IP with ACL или VPN).
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>Локальная сеть 1/10G медь/оптика.
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>Сетевое оборудование Mikrotik и Cisco в аренду.
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>Подключение к сети вторым портом 1GB/s бесплатно.
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>ЗИП на площадке.
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>Владеем оборудованием сами без посредников.
+                    </div>
+                    <div class="list">
+                        •<span class="empty"></span>Аренда лицензий по программе Microsoft SPLA.
+                    </div>
+
+                    <div class="lamp-block">
+                        <div class="lamp-block__icon">
+                            <div class="light-builb">
+                                <?php include('svg/light-bulb.svg'); ?>
+                            </div>
+                        </div>
+                        <div class="lamp-block__text">
+                            <div class="number">
+                                .01
+                            </div>
+                            <div class="title">
+                                Найдём нужное оборудование
+                            </div>
+                            <div class="text">
+                                Если в нашем ЦОД отсутствует нужное оборудование, то мы найдём его для вас.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===================================================== section question -->
+    <section class="section-question" id="question">
+        <div class="container">
+            <h1>
+                Частые вопросы
+            </h1>
+
+            <div class="tabs-block question-block" data-tab-block="t-question">
+
+                <ul class="nav nav-tabs">
+                    <li class="tab-link active" data-tab="t-question-1" data-tab-block="t-question">
+                        Малый бизнес
+                    </li>
+
+                    <li class="tab-link" data-tab="t-question-2" data-tab-block="t-question">
+                        Средний и крупный
+                    </li>
+
+                    <li class="tab-link" data-tab="t-question-3" data-tab-block="t-question">
+                        Технические вопросы
+                    </li>
+                </ul>
+
+                <div class="tabs-content-container tabs-question">
+
+                    <!-- ================================================ service tab 1-->
+                    <div class="tab-content active" data-tab="t-question-1" data-tab-block="t-question">
+
+                        <div class="questions-block">
+
+                            <!-- ========================= single partners -->
+                            <div class="questions-item">
+                                <div class="questions">
+                                    <div class="questions-arrow-holder">
+                                        <div class="plus">+</div>
+                                        <div class="minus">-</div>
+                                    </div>
+                                    <div class="number">
+                                        01.
+                                    </div>
+                                    <div class="questions-text">
+                                        У нас две серверные стойки, но администраторы на удаленной работе, поэтому самим
+                                        перевезти оборудование сложно. Возможна ли помощь при переезде?
+                                    </div>
+                                </div>
+
+                                <div class="answer">
+                                    <p>
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ========================= single partners -->
+                            <div class="questions-item">
+                                <div class="questions border-top">
+                                    <div class="questions-arrow-holder">
+                                        <div class="plus">+</div>
+                                        <div class="minus">-</div>
+                                    </div>
+                                    <div class="number">
+                                        02.
+                                    </div>
+                                    <div class="questions-text">
+                                        У нас две серверные стойки, но администраторы на удаленной работе, поэтому самим
+                                        перевезти оборудование сложно. Возможна ли помощь при переезде?
+                                    </div>
+
+                                </div>
+
+                                <div class="answer">
+                                    <p>
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ========================= single partners -->
+                            <div class="questions-item">
+                                <div class="questions border-top">
+                                    <div class="questions-arrow-holder">
+                                        <div class="plus">+</div>
+                                        <div class="minus">-</div>
+                                    </div>
+                                    <div class="number">
+                                        03.
+                                    </div>
+                                    <div class="questions-text">
+                                        У нас две серверные стойки, но администраторы на удаленной работе, поэтому самим
+                                        перевезти оборудование сложно. Возможна ли помощь при переезде?
+                                    </div>
+                                </div>
+
+                                <div class="answer">
+                                    <p>
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ========================= single partners -->
+                            <div class="questions-item">
+                                <div class="questions border-top">
+                                    <div class="questions-arrow-holder">
+                                        <div class="plus">+</div>
+                                        <div class="minus">-</div>
+                                    </div>
+                                    <div class="number">
+                                        04.
+                                    </div>
+                                    <div class="questions-text">
+                                        У нас две серверные стойки, но администраторы на удаленной работе, поэтому самим
+                                        перевезти оборудование сложно. Возможна ли помощь при переезде?
+                                    </div>
+                                </div>
+
+                                <div class="answer">
+                                    <p>
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ================================================ service tab 2-->
+                    <div class="tab-content" data-tab="t-question-2" data-tab-block="t-question">
+
+                        <div class="questions-block">
+
+                            <!-- ========================= single partners -->
+                            <div class="questions-item-2">
+                                <div class="questions">
+                                    <div class="questions-arrow-holder">
+                                        <div class="plus">+</div>
+                                        <div class="minus">-</div>
+                                    </div>
+                                    <div class="number">
+                                        01.
+                                    </div>
+                                    <div class="questions-text">
+                                        У нас две серверные стойки, но администраторы на удаленной работе, поэтому самим
+                                        перевезти оборудование сложно. Возможна ли помощь при переезде?
+                                    </div>
+
+                                </div>
+
+                                <div class="answer">
+                                    <p>
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ========================= single partners -->
+                            <div class="questions-item-2">
+                                <div class="questions border-top">
+                                    <div class="questions-arrow-holder">
+                                        <div class="plus">+</div>
+                                        <div class="minus">-</div>
+                                    </div>
+                                    <div class="number">
+                                        02.
+                                    </div>
+                                    <div class="questions-text">
+                                        У нас две серверные стойки, но администраторы на удаленной работе, поэтому самим
+                                        перевезти оборудование сложно. Возможна ли помощь при переезде?
+                                    </div>
+
+                                </div>
+
+                                <div class="answer">
+                                    <p>
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ========================= single partners -->
+                            <div class="questions-item-2">
+                                <div class="questions border-top">
+                                    <div class="questions-arrow-holder">
+                                        <div class="plus">+</div>
+                                        <div class="minus">-</div>
+                                    </div>
+                                    <div class="number">
+                                        03.
+                                    </div>
+                                    <div class="questions-text">
+                                        У нас две серверные стойки, но администраторы на удаленной работе, поэтому самим
+                                        перевезти оборудование сложно. Возможна ли помощь при переезде?
+                                    </div>
+
+                                </div>
+
+                                <div class="answer">
+                                    <p>
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ========================= single partners -->
+                            <div class="questions-item-2">
+                                <div class="questions border-top">
+                                    <div class="questions-arrow-holder">
+                                        <div class="plus">+</div>
+                                        <div class="minus">-</div>
+                                    </div>
+                                    <div class="number">
+                                        04.
+                                    </div>
+                                    <div class="questions-text">
+                                        У нас две серверные стойки, но администраторы на удаленной работе, поэтому самим
+                                        перевезти оборудование сложно. Возможна ли помощь при переезде?
+                                    </div>
+
+                                </div>
+
+                                <div class="answer">
+                                    <p>
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ================================================ service tab 3-->
+                    <div class="tab-content" data-tab="t-question-3" data-tab-block="t-question">
+
+                        <div class="questions-block">
+
+                            <!-- ========================= single partners -->
+                            <div class="questions-item-3">
+                                <div class="questions">
+                                    <div class="questions-arrow-holder">
+                                        <div class="plus">+</div>
+                                        <div class="minus">-</div>
+                                    </div>
+                                    <div class="number">
+                                        01.
+                                    </div>
+                                    <div class="questions-text">
+                                        У нас две серверные стойки, но администраторы на удаленной работе, поэтому самим
+                                        перевезти оборудование сложно. Возможна ли помощь при переезде?
+                                    </div>
+
+                                </div>
+
+                                <div class="answer">
+                                    <p>
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ========================= single partners -->
+                            <div class="questions-item-3">
+                                <div class="questions border-top">
+                                    <div class="questions-arrow-holder">
+                                        <div class="plus">+</div>
+                                        <div class="minus">-</div>
+                                    </div>
+                                    <div class="number">
+                                       02.
+                                    </div>
+                                    <div class="questions-text">
+                                        У нас две серверные стойки, но администраторы на удаленной работе, поэтому самим
+                                        перевезти оборудование сложно. Возможна ли помощь при переезде?
+                                    </div>
+
+                                </div>
+
+                                <div class="answer">
+                                    <p>
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ========================= single partners -->
+                            <div class="questions-item-3">
+                                <div class="questions border-top">
+                                    <div class="questions-arrow-holder">
+                                        <div class="plus">+</div>
+                                        <div class="minus">-</div>
+                                    </div>
+                                    <div class="number">
+                                        03.
+                                    </div>
+                                    <div class="questions-text">
+                                        У нас две серверные стойки, но администраторы на удаленной работе, поэтому самим
+                                        перевезти оборудование сложно. Возможна ли помощь при переезде?
+                                    </div>
+
+                                </div>
+
+                                <div class="answer">
+                                    <p>
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ========================= single partners -->
+                            <div class="questions-item-3">
+                                <div class="questions border-top">
+                                    <div class="questions-arrow-holder">
+                                        <div class="plus">+</div>
+                                        <div class="minus">-</div>
+                                    </div>
+                                    <div class="number">
+                                        04.
+                                    </div>
+                                    <div class="questions-text">
+                                        У нас две серверные стойки, но администраторы на удаленной работе, поэтому самим
+                                        перевезти оборудование сложно. Возможна ли помощь при переезде?
+                                    </div>
+
+                                </div>
+
+                                <div class="answer">
+                                    <p>
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ================================================ service tab 4-->
+                    <div class="tab-content" data-tab="t-question-4" data-tab-block="t-question">
+
+                        <div class="questions-block">
+
+                            <!-- ========================= single partners -->
+                            <div class="questions-item-4">
+                                <div class="questions">
+                                    <div class="questions-arrow-holder">
+                                        <div class="plus">+</div>
+                                        <div class="minus">-</div>
+                                    </div>
+                                    <div class="number">
+                                        01.
+                                    </div>
+                                    <div class="questions-text">
+                                        У нас две серверные стойки, но администраторы на удаленной работе, поэтому самим
+                                        перевезти оборудование сложно. Возможна ли помощь при переезде?
+                                    </div>
+
+                                </div>
+
+                                <div class="answer">
+                                    <p>
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ========================= single partners -->
+                            <div class="questions-item-4">
+                                <div class="questions border-top">
+                                    <div class="questions-arrow-holder">
+                                        <div class="plus">+</div>
+                                        <div class="minus">-</div>
+                                    </div>
+                                    <div class="number">
+                                        02.
+                                    </div>
+                                    <div class="questions-text">
+                                        У нас две серверные стойки, но администраторы на удаленной работе, поэтому самим
+                                        перевезти оборудование сложно. Возможна ли помощь при переезде?
+                                    </div>
+
+                                </div>
+
+                                <div class="answer">
+                                    <p>
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ========================= single partners -->
+                            <div class="questions-item-4">
+                                <div class="questions border-top">
+                                    <div class="questions-arrow-holder">
+                                        <div class="plus">+</div>
+                                        <div class="minus">-</div>
+                                    </div>
+                                    <div class="number">
+                                        03.
+                                    </div>
+                                    <div class="questions-text">
+                                        У нас две серверные стойки, но администраторы на удаленной работе, поэтому самим
+                                        перевезти оборудование сложно. Возможна ли помощь при переезде?
+                                    </div>
+
+                                </div>
+
+                                <div class="answer">
+                                    <p>
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ========================= single partners -->
+                            <div class="questions-item-4">
+                                <div class="questions border-top">
+                                    <div class="questions-arrow-holder">
+                                        <div class="plus">+</div>
+                                        <div class="minus">-</div>
+                                    </div>
+                                    <div class="number">
+                                        04.
+                                    </div>
+                                    <div class="questions-text">
+                                        У нас две серверные стойки, но администраторы на удаленной работе, поэтому самим
+                                        перевезти оборудование сложно. Возможна ли помощь при переезде?
+                                    </div>
+
+                                </div>
+
+                                <div class="answer">
+                                    <p>
+                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===================================================== section review -->
+    <section class="section-review" id="review">
+        <div class="container">
+            <h1>
+                Отзывы о работе
+            </h1>
+
+            <div class="review-wrapper">
+                <div class="review-block">
+                    <div class="title">
+                        1500
+                    </div>
+                    <div class="line-yellow"></div>
+                    <div class="text">
+                        довольных
+                        клиентов
+                    </div>
+                </div>
+                <div class="review-block">
+                    <div class="title">
+                        1500
+                    </div>
+                    <div class="line-yellow"></div>
+                    <div class="text">
+                        довольных
+                        клиентов
+                    </div>
+                </div>
+                <div class="review-block">
+                    <div class="title">
+                        1500
+                    </div>
+                    <div class="line-yellow"></div>
+                    <div class="text">
+                        довольных
+                        клиентов
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper-review-slider">
+                <!-- Swiper -->
+                <div class="swiper-container review-slider">
+                    <div class="swiper-wrapper">
+
+                        <!-- single slide -->
+                        <div class="swiper-slide">
+                            <img src="images/review-1.jpg" alt=" " class="img-block">
+                        </div>
+
+                        <!-- single slide -->
+                        <div class="swiper-slide">
+                            <img src="images/review-2.jpg" alt=" " class="img-block">
+                        </div>
+
+                        <!-- single slide -->
+                        <div class="swiper-slide">
+                            <img src="images/review-3.jpg" alt=" " class="img-block">
+                        </div>
+
+                        <!-- single slide -->
+                        <div class="swiper-slide">
+                            <img src="images/review-1.jpg" alt=" " class="img-block">
+                        </div>
+
+                        <!-- single slide -->
+                        <div class="swiper-slide">
+                            <img src="images/review-2.jpg" alt=" " class="img-block">
+                        </div>
+
+                        <!-- single slide -->
+                        <div class="swiper-slide">
+                            <img src="images/review-3.jpg" alt=" " class="img-block">
+                        </div>
+
+                        <!-- single slide -->
+                        <div class="swiper-slide">
+                            <img src="images/review-1.jpg" alt=" " class="img-block">
+                        </div>
+
+                        <!-- single slide -->
+                        <div class="swiper-slide">
+                            <img src="images/review-2.jpg" alt=" " class="img-block">
+                        </div>
+
+                        <!-- single slide -->
+                        <div class="swiper-slide">
+                            <img src="images/review-3.jpg" alt=" " class="img-block">
+                        </div>
+
+                        <!-- single slide -->
+                        <div class="swiper-slide">
+                            <img src="images/review-1.jpg" alt=" " class="img-block">
+                        </div>
+
+                        <!-- single slide -->
+                        <div class="swiper-slide">
+                            <img src="images/review-2.jpg" alt=" " class="img-block">
+                        </div>
+
+                        <!-- single slide -->
+                        <div class="swiper-slide">
+                            <img src="images/review-3.jpg" alt=" " class="img-block">
+                        </div>
+                    </div>
+                </div>
+
+                <!--            Pagination-->
+                <div class="swiper-pagination review-pagination"></div>
+
+                <!-- Add Arrows -->
+                <div class="button-block">
+                    <div class="swiper-button-next review-next">
+                        <div class="icon_block">
+<!--                            --><?php //include("svg/left_arrow.svg"); ?>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev review-prev">
+                        <div class="icon_block">
+<!--                            --><?php //include("svg/left_arrow.svg"); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--===================================================== section x -->
     <section class="section-x" id="x">
         <div class="container">
@@ -341,8 +1250,8 @@ if (file_exists('SxGeo.php')) {
 
                 <input type="hidden" name="send_type" class="send-type" value="2">
                 <input type="hidden" name="send_extra" class="send-extra" value="1">
-				<input type="hidden" name="key" value="<?php echo $_SESSION['sf_key'] ?>">
-				<?php //Поле выше для защиты формы от спам-ботов ?>
+                <input type="hidden" name="key" value="<?php echo $_SESSION['sf_key'] ?>">
+                <?php //Поле выше для защиты формы от спам-ботов ?>
 
                 <div class="btn-holder">
                     <button type="submit" class="btn">Позвоните мне</button>
@@ -461,7 +1370,7 @@ if (file_exists('SxGeo.php')) {
 
             </div>
         </div>
-	
+
         <!--============================================== phone modal -->
         <div class="si-modal phone-modal">
             <a href="#" class="si-close"></a>
@@ -491,8 +1400,8 @@ if (file_exists('SxGeo.php')) {
 
                     <input type="hidden" name="send_type" class="send-type" value="1">
                     <input type="hidden" name="send_extra" class="send-extra" value="1">
-					<input type="hidden" name="key" value="<?php echo $_SESSION['sf_key'] ?>">
-					<?php //Поле выше для защиты формы от спам-ботов ?>
+                    <input type="hidden" name="key" value="<?php echo $_SESSION['sf_key'] ?>">
+                    <?php //Поле выше для защиты формы от спам-ботов ?>
 
                     <div class="btn-holder">
                         <button type="submit" class="btn">Позвоните мне</button>
