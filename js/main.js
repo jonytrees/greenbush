@@ -280,7 +280,7 @@ jQuery(function ($) {
     if($('html').find('.experience-slider-holder')){
         var experienceSlider = new Swiper('.experience-slider', {
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween: 20,
             pagination: {
                 el: '.experience-pagination',
                 clickable: true,
@@ -517,11 +517,4 @@ jQuery(function ($) {
 
     mapInit(myMap, 'map');
 
-    // ===================================================== loader
-    //setTimeout(function () {
-    //    $('html').removeClass('loading');
-    //    setTimeout(function () {
-    //        $('.loader').hide();
-    //    }, 500);
-    //}, 1000);
 });

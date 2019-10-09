@@ -8,7 +8,7 @@ html {
 	background: #fff;
 	font: 16px/24px 'Exo';
 	width: 100%;
-	min-width: 1235px;
+	min-width: 1223px;
 	max-width: 100%;
 	min-height: 100% !important;
 	position: relative;
@@ -21,7 +21,7 @@ html {
 
 body {
 	width: 100%;
-	min-width: 1235px;
+	min-width: 1223px;
 	max-width: 100%;
 	position: relative;
 	overflow: hidden;
@@ -34,7 +34,7 @@ body {
 //====================global container
 #global-wrapper {
 	overflow: hidden;
-	min-width: 1235px;
+	min-width: 1223px;
 	position: relative;
 
 	@include mobile{
@@ -45,7 +45,7 @@ body {
 //====================container
 .container {
 	display: block;
-	width: 1235px;
+	width: 1223px;
 	padding: 0 15px;
 	margin: 0 auto;
 	position: relative;
@@ -292,7 +292,7 @@ ul.marked {
 }
 
 .review-pagination{
-	bottom: -82px;
+	bottom: -77px;
 
 	.swiper-pagination-bullet {
 		@include general-transition;

@@ -20,7 +20,7 @@
 
 //==================== section heading
 .section-heading {
-  padding: 295px 0 135px;
+  padding: 288px 0 141px;
   position: relative;
 
   .wrapper-heading-slider {
@@ -73,14 +73,14 @@
     }
 
     .heading-pagination {
-      bottom: 78px !important;
+      bottom: 103px !important;
     }
   }
 
   .small-text {
     text-align: center;
     font: 500 29px/29px 'Exo';
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     color: #fff;
   }
 
@@ -88,7 +88,7 @@
     color: #fff;
     text-transform: uppercase;
     font: 600 70px/87px 'Exo';
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     text-align: center;
   }
 
@@ -102,7 +102,12 @@
   .more-block {
     display: block;
     margin: 0 auto;
-    width: 700px;
+    width: 734px;
+
+    .btn-yellow{
+      margin-left: 39px;
+      margin-top: 3px;
+    }
 
     .more-block__text {
       display: inline-block;
@@ -117,14 +122,26 @@
 
   .last-wrapper {
     color: #fff;
-    width: 890px;
-    margin: 88px auto 0;
+    width: 884px;
+    margin: 82px auto 0;
     display: flex;
     justify-content: space-between;
 
     .last-wrapper__block {
       display: inline-block;
       width: 173px;
+
+      &.i-1{
+        width: 200px;
+      }
+
+      &.i-2{
+        width: 187px;
+      }
+
+      &.i-3{
+        width: 165px;
+      }
 
       .title {
         display: block;
@@ -143,11 +160,11 @@
 //==================== section-green
 .section-green {
   background-color: #0e403d;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 22px;
+  padding-bottom: 23px;
 
   .container {
-    width: 1170px;
+    width: 1195px;
   }
 
   .title {
@@ -167,7 +184,7 @@
     color: #ffffff !important;
     font: 500 16px/65px 'Exo';
     text-transform: uppercase;
-    margin-top: -5px;
+    margin-top: -2px;
 
     &:hover {
       @include general-transition;
@@ -181,11 +198,11 @@
 //==================== section-technical
 .section-technical {
   background-color: #f6f6f6;
-  padding-top: 115px;
+  padding-top: 101px;
   padding-bottom: 119px;
 
   .container {
-    width: 1150px;
+    width: 1195px;
   }
 
   .title {
@@ -202,23 +219,24 @@
   }
 
   .technical-img {
-    margin-top: 30px;
+    margin-top: 39px;
+    margin-right: 20px;
   }
 }
 
 
 //==================== section-options
 .section-options {
-  padding-top: 150px;
+  padding-top: 139px;
 
   .container {
-    width: 1170px;
+    width: 1195px;
   }
 
   h1 {
     color: #181818;
-    font: 600 71px/71px 'Exo';
-    margin-bottom: 80px;
+    font: 600 71px/64px 'Exo';
+    margin-bottom: 87px;
   }
 
   .options-block {
@@ -294,55 +312,64 @@
     .options-block__icon {
       display: block;
       margin-bottom: 5px;
-      margin-left: 30px;
 
       &.i-1 {
         width: 58px;
+        margin-left: 36px;
       }
 
       &.i-2 {
         width: 50px;
         margin-bottom: 13px;
+        margin-left: 39px;
       }
 
       &.i-3 {
         width: 60px;
+        margin-left: 46px;
       }
 
       &.i-4 {
-        width: 50px;
+        width: 57px;
         margin-bottom: 5px;
+        margin-left: 30px;
       }
 
       &.i-5 {
-        width: 48px;
+        width: 54px;
+        margin-top: 3px;
+        margin-left: 34px;
         margin-bottom: 10px;
       }
 
       &.i-6 {
-        width: 47px;
+        width: 54px;
         margin-bottom: 10px;
+        margin-left: 35px;
       }
 
       &.i-7 {
-        width: 55px;
+        width: 56px;
         margin-top: -20px;
         margin-bottom: 0;
+        margin-left: 51px;
       }
 
       &.i-8 {
-        width: 53px;
+        width: 55px;
+        margin-left: 40px;
+        margin-bottom: 11px;
       }
     }
 
     .options-block__title {
       display: block;
-      margin: 0 auto 25px;
+      margin: 0 auto 17px;
       color: #181818;
       font: 600 36px/36px 'Exo';
 
       &.margin-top{
-        margin: -5px auto 25px;
+        margin: 0 auto 18px;
       }
     }
 
@@ -362,32 +389,33 @@
 
 //==================== section-service
 .section-service {
-  padding-top: 120px;
+  padding-top: 117px;
 
   .container {
     background-color: #0e403d;
     border-radius: 12px;
-    margin-bottom: 400px;
+    margin-bottom: 374px;
   }
 
   .wrapper {
-    width: 1042px;
-    height: 540px;
+    width: 1032px;
+    height: 535px;
     position: relative;
     display: block;
     margin: 0 auto;
-    padding-top: 93px;
+    padding-top: 77px;
 
     h1 {
       color: #fff;
       font: 600 71px/71px 'Exo';
-      margin-bottom: 50px;
+      margin-bottom: 57px;
+      margin-left: 15px;
     }
 
     .tab-header {
       display: block;
       width: 100%;
-      margin-bottom: 45px;
+      margin-bottom: 38px;
 
       h3 {
         color: #181818;
@@ -419,15 +447,16 @@
       }
 
       .price-block {
-        width: 200px;
+        width: 196px;
         display: inline-block;
         vertical-align: top;
         float: right;
+        margin-top: 5px;
 
         span {
           color: #5f5f5f;
           display: block;
-          font: 500 26px/34px 'Exo';
+          font: 500 26px/38px 'Exo';
 
           &:nth-child(1) {
             margin-bottom: 3px;
@@ -470,8 +499,8 @@
   .more-block{
     width: 1042px;
     display: block;
-    margin: 450px auto 0;
-    padding-left: 60px;
+    margin: 440px auto 0;
+    padding-left: 54px;
     position: relative;
 
     .text{
@@ -487,38 +516,52 @@
         height: 41px;
         display: block;
         position: absolute;
-        top: 12px;
-        right: -80px;
+        top: 18px;
+        right: -75px;
         background: url("../svg/rigt2.svg") no-repeat;
         background-size: cover;
       }
     }
 
     .btn-yellow{
-      margin-left: 125px;
+      margin-left: 111px;
       vertical-align: top;
-      margin-top: -3px;
+      margin-top: 5px;
     }
   }
 }
 
 //==================== section-include
 .section-include{
-  padding-top: 140px;
-  padding-bottom: 190px;
+  padding-top: 4px;
+  padding-bottom: 197px;
 
   .container{
-    width: 1167px;
+    width: 1195px;
   }
 
   h3{
     font: 600 38px/38px 'Exo';
-    margin-bottom: 90px;
+    margin-bottom: 78px;
+  }
+
+  .left-block{
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+  }
+
+  .right-block{
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    float: right;
+    padding-left: 19px;
   }
 
   .list{
-    width: 90%;
-    font: 500 18px/32px 'Exo';
+    width: 100%;
+    font: 500 18px/35px 'Exo';
     margin-bottom: 10px;
 
     .empty{
@@ -528,10 +571,10 @@
   }
 
   .lamp-block{
-    margin-left: 12px;
+    margin-left: 22px;
     width: 100%;
     display: block;
-    margin-top: 70px;
+    margin-top: 82px;
 
     .lamp-block__icon{
       display: inline-block;
@@ -555,8 +598,8 @@
       display: inline-block;
       vertical-align: top;
       width: 370px;
-      margin-left: 38px;
-      margin-top: -8px;
+      margin-left: 35px;
+      margin-top: -12px;
 
       .number{
         color: rgba(61, 63, 63, 0.5);
@@ -568,7 +611,7 @@
       .title{
         font: 600 25px/25px 'Exo';
         display: block;
-        margin-bottom: 14px;
+        margin-bottom: 12px;
       }
 
       .text{
@@ -581,8 +624,8 @@
 //==================== section-question
 .section-question{
   background-color: #0e403d;
-  padding-top: 168px;
-  padding-bottom: 190px;
+  padding-top: 153px;
+  padding-bottom: 173px;
 
   .container{
     width: 1197px;
@@ -591,7 +634,7 @@
   h1{
     color: #fff;
     font: 600 71px/71px 'Exo';
-    margin-bottom: 85px;
+    margin-bottom: 89px;
   }
 
   .questions-item,
@@ -606,7 +649,7 @@
     }
 
     .questions{
-      padding: 40px 55px;
+      padding: 51px 53px 44px;
       display: block;
       cursor: pointer;
 
@@ -632,6 +675,8 @@
         color: #fff;
         font: 500 35px/35px 'Exo';
         margin-right: 26px;
+        vertical-align: top;
+        margin-top: 8px;
       }
 
       .questions-text{
@@ -643,9 +688,11 @@
 
       .questions-arrow-holder{
         display: inline-block;
-        font: 500 47px/47px 'Exo';
+        font: 300 47px/47px 'Exo';
         color: #fff;
         float: right;
+        vertical-align: top;
+        margin-right: -3px;
 
         .minus{
           display: none;
@@ -655,6 +702,7 @@
 
     &.active{
       .questions{
+        padding: 35px 53px 39px;
         background-color: #ffed00;
 
         .number{
@@ -680,15 +728,16 @@
 
   .answer{
     background-color: rgba(232, 232, 232, 0.05);
-    padding-top: 25px;
-    padding-bottom: 47px;
+    padding-top: 18px;
+    padding-bottom: 31px;
+
 
     p{
-      width: 910px;
+      width: 905px;
       display: block;
       margin: 0 auto;
       color: #fff;
-      font: 500 17px/25px 'Exo';
+      font: 400 17px/25px 'Exo';
     }
   }
 }
@@ -696,19 +745,23 @@
 //==================== section-review
 .section-review{
   background-color: #f6f6f6;
-  padding-top: 217px;
+  padding-top: 204px;
   padding-bottom: 245px;
+
+  .container{
+    width: 1195px;
+  }
 
   h1{
     font: 600 71px/71px 'Exo';
-    margin-bottom: 105px;
+    margin-bottom: 96px;
   }
 
   .review-wrapper{
-    width: 770px;
+    width: 752px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 74px;
 
     .review-block{
       display: inline-block;
@@ -724,7 +777,8 @@
         width: 25px;
         height: 3px;
         background-color: #ffed00;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
+        margin-left: 0;
       }
 
       .text{
@@ -752,7 +806,7 @@
 
     .img-block{
       width: 351px;
-      height: 486px;
+      height: 470px;
       display: block;
     }
 
@@ -760,8 +814,8 @@
       width: 120px;
       height: 60px;
       position: absolute;
-      top: 320px;
-      right: 3%;
+      top: 306px;
+      right: 1%;
 
       .review-next,
       .review-prev{
@@ -801,11 +855,11 @@
 
 //==================== section-experience
 .section-experience{
-  padding-top: 180px;
+  padding-top: 162px;
   padding-bottom: 230px;
 
   .container{
-    width: 1170px;
+    width: 1195px;
   }
 
   h1{
@@ -829,13 +883,13 @@
     img{
       width: 100%;
       display: block;
-      margin-bottom: 62px;
+      margin-bottom: 52px;
     }
 
     .title{
       font: 500 47px/47px 'Exo';
       display: block;
-      margin-bottom: 65px;
+      margin-bottom: 70px;
     }
 
     .experience-next,
@@ -844,6 +898,7 @@
       //height: 24px;
       display: inline-block;
       vertical-align: top;
+      top: 44%;
 
       &:after{
         content: '';
@@ -869,11 +924,11 @@
     }
 
     .experience-prev{
-      left: 3%;
+      left: 4%;
     }
 
     .experience-next{
-      right: 3%;
+      right: 4%;
     }
   }
 }
@@ -882,7 +937,11 @@
 //==================== section-data
 .section-data{
   background-color: #f6f6f6;
-  padding-top: 160px;
+  padding-top: 145px;
+
+  .container{
+    width: 1195px;
+  }
 
   h1{
     font: 600 71px/71px 'Exo';
@@ -921,7 +980,7 @@
 
   .wrapper-data-slider{
     width: 100%;
-    height: 660px;
+    height: 653px;
     position: relative;
 
     .data-bg{
@@ -986,32 +1045,55 @@
 //==================== section-square
 .section-square{
   background-color: #0e403d;
-  padding-top: 117px;
-  padding-bottom: 104px;
+  padding-top: 103px;
+  padding-bottom: 97px;
+
+  .container{
+    width: 1195px;
+  }
 
   .square-wrapper{
-    width: 1080px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-left: -35px;
+
+    &.m-1{
+
+      .square-block{
+        margin-top: -5px;
+
+        .title{
+          margin-bottom: 18px;
+        }
+
+        .line{
+          margin-bottom: 9px;
+        }
+      }
+    }
 
     .square-block{
       display: inline-block;
       width: 357px;
       padding: 40px 37px 40px 35px;
 
+      &.i-1{
+        width: 400px;
+      }
+
       .title{
         color: #ffffff;
         font: 500 52px/52px 'Exo';
         display: block;
-        margin-bottom: 24px;
+        margin-bottom: 21px;
       }
 
       .line-white{
         width: 25px;
         height: 3px;
         background-color: #ffffff;
-        margin-bottom: 20px;
+        margin-bottom: 11px;
       }
 
       .text{
@@ -1021,6 +1103,7 @@
       }
 
       &:hover{
+        @include general-transition;
         background-color: #ffed00;
 
         .title{
@@ -1042,54 +1125,55 @@
 
 //==================== section-infrastructure
 .section-infrastructure{
-  padding-top: 200px;
-  padding-bottom: 210px;
+  padding-top: 187px;
+  padding-bottom: 183px;
 
   .container{
-    width: 1177px;
+    width: 1195px;
   }
 
   h1{
     font: 600 71px/71px 'Exo';
-    margin-bottom: 84px;
+    margin-bottom: 91px;
   }
 
   .infrastructure-wrapper{
     width: 100%;
-    height: 350px;
+    height: 347px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 29px;
 
     .infrastructure-img{
       display: inline-block;
-      width: 50%;
+      width: 49%;
     }
 
     .infrastructure-block{
-      width: 50%;
+      width: 51%;
       display: inline-block;
       background-color: #f6f6f6;
-      padding: 50px 40px 40px;
+      padding: 53px 44px 40px;
 
       &.i-1{
-        padding: 22px 20px 48px 40px;
+        padding: 24px 20px 48px 46px;
       }
 
       &.i-2{
-        padding: 53px 30px 48px 40px;
+        padding: 56px 30px 48px 45px;
       }
 
       .title{
         font: 500 43px/48px 'Exo';
-        margin-bottom: 25px;
+        margin-bottom: 23px;
       }
 
       .line-yellow{
         width: 25px;
         height: 3px;
         background-color: #ffed00;
-        margin-bottom: 20px;
+        margin-bottom: 13px;
+        margin-left: 0;
       }
 
       .text{
@@ -1100,7 +1184,9 @@
     }
 
     &:hover{
+      @include general-transition;
       .infrastructure-block{
+        @include general-transition;
         background-color: #ffed00;
 
         .line-yellow{
@@ -1119,11 +1205,11 @@
 //=============== section-last
 .section-last{
   background-color: #dddddd;
-  padding-top: 22px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 12px;
 
   .container{
-    width: 1170px;
+    width: 1195px;
   }
 
   .dark{

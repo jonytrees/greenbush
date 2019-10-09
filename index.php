@@ -128,19 +128,23 @@ $image = SI_CurrentPageImage();
 
         <div class="container">
 
-            <div class="small-text">
+            <div class="small-text cre-animate" data-animation="slide-in-from-right"
+                 data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                 Дата-центр GreenBushDC
             </div>
-            <h1>
+            <h1 class="cre-animate" data-animation="slide-in-from-left"
+                data-speed="1000" data-delay="600" data-offset="90%" data-easing="easeOut">
                 Надёжный центр обработки
                 данных для вашего бизнеса
             </h1>
 
-            <div class="address-text">
+            <div class="address-text cre-animate" data-animation="slide-in-from-right"
+                 data-speed="1000" data-delay="900" data-offset="90%" data-easing="easeOut">
                 Москва, г. Зеленоград, Проезд 683, д.8
             </div>
 
-            <div class="more-block">
+            <div class="more-block cre-animate" data-animation="slide-in-from-left"
+                 data-speed="1000" data-delay="1200" data-offset="90%" data-easing="easeOut">
                 <a href="#" class="btn btn-yellow">
                     Узнать больше
                 </a>
@@ -151,7 +155,8 @@ $image = SI_CurrentPageImage();
             </div>
 
             <div class="last-wrapper">
-                <div class="last-wrapper__block">
+                <div class="last-wrapper__block cre-animate" data-animation="slide-up-from-bottom"
+                     data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                     <div class="title">
                         99,98%
                     </div>
@@ -160,7 +165,8 @@ $image = SI_CurrentPageImage();
                         от 10 000 $
                     </div>
                 </div>
-                <div class="last-wrapper__block">
+                <div class="last-wrapper__block i-1 cre-animate" data-animation="slide-up-from-bottom"
+                     data-speed="1000" data-delay="600" data-offset="90%" data-easing="easeOut">
                     <div class="title">
                         24х7х365
 
@@ -170,7 +176,8 @@ $image = SI_CurrentPageImage();
                         к оборудованию
                     </div>
                 </div>
-                <div class="last-wrapper__block">
+                <div class="last-wrapper__block i-2 cre-animate" data-animation="slide-up-from-bottom"
+                     data-speed="1000" data-delay="900" data-offset="90%" data-easing="easeOut">
                     <div class="title">
                         0 ЧАСОВ
                     </div>
@@ -178,7 +185,8 @@ $image = SI_CurrentPageImage();
                         период отключения сервиса для проведения плановых работ
                     </div>
                 </div>
-                <div class="last-wrapper__block">
+                <div class="last-wrapper__block i-3 cre-animate" data-animation="slide-up-from-bottom"
+                     data-speed="1000" data-delay="1200" data-offset="90%" data-easing="easeOut">
                     <div class="title">
                         15 МИН
                     </div>
@@ -187,7 +195,6 @@ $image = SI_CurrentPageImage();
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -215,16 +222,19 @@ $image = SI_CurrentPageImage();
         <div class="container">
             <div class="row">
                 <div class="col-3-4">
-                    <div class="title">
+                    <div class="title cre-animate" data-animation="slide-in-from-left"
+                         data-speed="1000" data-delay="500" data-offset="90%" data-easing="easeOut">
                         Технические характеристики
                     </div>
-                    <div class="text">
+                    <div class="text cre-animate" data-animation="slide-in-from-left"
+                         data-speed="1000" data-delay="100" data-offset="90%" data-easing="easeOut">
                         Инженерная инфраструктура проекта полностью соответствует
                         требованиям «Уровня 3» (Tier III) по классификации Uptime Institute.
                     </div>
                     <a href="#" class="btn btn-yellow">Смотреть сертификат</a>
                 </div>
-                <div class="col-1-4 align-right">
+                <div class="col-1-4 align-right cre-animate" data-animation="slide-in-from-right"
+                     data-speed="1000" data-delay="1200" data-offset="90%" data-easing="easeOut">
                     <img src="images/technical-img.png" alt=" " class="technical-img">
                 </div>
             </div>
@@ -234,12 +244,14 @@ $image = SI_CurrentPageImage();
     <!--===================================================== section options -->
     <section class="section-options" id="options">
         <div class="container">
-            <h1>
+            <h1 class="cre-animate" data-animation="slide-in-from-left"
+                data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                 Гарантированные
                 эксплуатационные параметры
             </h1>
             <div class="row">
-                <div class="col-1-4">
+                <div class="col-1-4 cre-animate" data-animation="slide-in-from-left"
+                     data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                     <div class="options-block">
                         <div class="options-block__icon i-1">
                             <?php include('svg/light-bulb.svg'); ?>
@@ -253,7 +265,8 @@ $image = SI_CurrentPageImage();
                         </div>
                     </div>
                 </div>
-                <div class="col-1-4">
+                <div class="col-1-4 cre-animate" data-animation="slide-in-from-left"
+                     data-speed="1000" data-delay="600" data-offset="90%" data-easing="easeOut">
                     <div class="options-block">
                         <div class="options-block__icon i-2">
                             <?php include('svg/protection.svg'); ?>
@@ -261,13 +274,14 @@ $image = SI_CurrentPageImage();
                         <div class="options-block__title">
                             50±0,2 Гц
                         </div>
-                        <div class="options-block__text">
+                        <div class="options-block__text a-1">
                             гарантированная
                             частота электропитания
                         </div>
                     </div>
                 </div>
-                <div class="col-1-4">
+                <div class="col-1-4 cre-animate" data-animation="slide-in-from-left"
+                     data-speed="1000" data-delay="900" data-offset="90%" data-easing="easeOut">
                     <div class="options-block">
                         <div class="options-block__icon i-3">
                             <?php include('svg/plug.svg'); ?>
@@ -281,16 +295,16 @@ $image = SI_CurrentPageImage();
                         </div>
                     </div>
                 </div>
-                <div class="col-1-4">
+                <div class="col-1-4 cre-animate" data-animation="slide-in-from-left"
+                     data-speed="1000" data-delay="1200" data-offset="90%" data-easing="easeOut">
                     <div class="options-block">
                         <div class="options-block__icon i-4">
                             <?php include('svg/flash.svg'); ?>
                         </div>
                         <div class="options-block__title">
                             15 кВт
-
                         </div>
-                        <div class="options-block__text">
+                        <div class="options-block__text a-1">
                             максимальная
                             потребляемая мощность
                             на стойку
@@ -299,7 +313,8 @@ $image = SI_CurrentPageImage();
                 </div>
             </div>
             <div class="row">
-                <div class="col-1-4">
+                <div class="col-1-4 cre-animate" data-animation="slide-in-from-right"
+                     data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                     <div class="options-block">
                         <div class="options-block__icon i-5">
                             <?php include('svg/data.svg'); ?>
@@ -313,7 +328,8 @@ $image = SI_CurrentPageImage();
                         </div>
                     </div>
                 </div>
-                <div class="col-1-4">
+                <div class="col-1-4 cre-animate" data-animation="slide-in-from-right"
+                     data-speed="1000" data-delay="600" data-offset="90%" data-easing="easeOut">
                     <div class="options-block">
                         <div class="options-block__icon i-6">
                             <?php include('svg/celsius.svg'); ?>
@@ -328,7 +344,8 @@ $image = SI_CurrentPageImage();
                         </div>
                     </div>
                 </div>
-                <div class="col-1-4">
+                <div class="col-1-4 cre-animate" data-animation="slide-in-from-right"
+                     data-speed="1000" data-delay="900" data-offset="90%" data-easing="easeOut">
                     <div class="options-block">
                         <div class="options-block__icon i-7">
                             <?php include('svg/computing.svg'); ?>
@@ -343,7 +360,8 @@ $image = SI_CurrentPageImage();
                         </div>
                     </div>
                 </div>
-                <div class="col-1-4">
+                <div class="col-1-4 cre-animate" data-animation="slide-in-from-right"
+                     data-speed="1000" data-delay="1200" data-offset="90%" data-easing="easeOut">
                     <div class="options-block">
                         <div class="options-block__icon i-8">
                             <?php include('svg/device.svg'); ?>
@@ -366,7 +384,8 @@ $image = SI_CurrentPageImage();
     <section class="section-service" id="service">
         <div class="container">
             <div class="wrapper">
-                <h1>
+                <h1 class="cre-animate" data-animation="slide-in-from-left"
+                    data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                     Наши услуги
                 </h1>
                 <div class="tabs-block service-block" data-tab-block="t-service">
@@ -376,11 +395,11 @@ $image = SI_CurrentPageImage();
                             Colocation
                         </li>
 
-                        <li class="tab-link" data-tab="t-service-2" data-tab-block="t-service">
+                        <li class="tab-link i-1" data-tab="t-service-2" data-tab-block="t-service">
                             VDS
                         </li>
 
-                        <li class="tab-link" data-tab="t-service-3" data-tab-block="t-service">
+                        <li class="tab-link i-2" data-tab="t-service-3" data-tab-block="t-service">
                             Аренда помещений
                         </li>
                     </ul>
@@ -489,7 +508,8 @@ $image = SI_CurrentPageImage();
                     </div>
                 </div>
 
-                <div class="more-block">
+                <div class="more-block cre-animate" data-animation="slide-in-from-right"
+                     data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                     <div class="text">
                         Ответим на вопросы и поможем построить
                         IT-инфраструктуру для вашего бизнеса.
@@ -509,8 +529,9 @@ $image = SI_CurrentPageImage();
             <h3>
                 Что включено
             </h3>
-            <div class="row">
-                <div class="col-1-2">
+<!--            <div class="row">-->
+                <div class="left-block cre-animate" data-animation="slide-in-from-left"
+                     data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                     <div class="list">
                         •<span class="empty"></span>Серверный Шкаф исполнителя 600x1070 42U, 2 независимых ввода,
                         2PDU по
@@ -547,7 +568,8 @@ $image = SI_CurrentPageImage();
                         •<span class="empty"></span>Стоечные "rack" сервера
                     </div>
                 </div>
-                <div class="col-1-2">
+                <div class="right-block cre-animate" data-animation="slide-in-from-right"
+                     data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                     <div class="list">
                         •<span class="empty"></span>Локальная сеть 1/10G.
                     </div>
@@ -602,29 +624,30 @@ $image = SI_CurrentPageImage();
                         </div>
                     </div>
                 </div>
-            </div>
+<!--            </div>-->
         </div>
     </section>
 
     <!--===================================================== section question -->
     <section class="section-question" id="question">
         <div class="container">
-            <h1>
+            <h1 class="cre-animate" data-animation="slide-in-from-left"
+                data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                 Частые вопросы
             </h1>
 
             <div class="tabs-block question-block" data-tab-block="t-question">
 
-                <ul class="nav nav-tabs">
+                <ul class="nav nav-tabs nav-question">
                     <li class="tab-link active" data-tab="t-question-1" data-tab-block="t-question">
                         Малый бизнес
                     </li>
 
-                    <li class="tab-link" data-tab="t-question-2" data-tab-block="t-question">
+                    <li class="tab-link i-1" data-tab="t-question-2" data-tab-block="t-question">
                         Средний и крупный
                     </li>
 
-                    <li class="tab-link" data-tab="t-question-3" data-tab-block="t-question">
+                    <li class="tab-link i-2" data-tab="t-question-3" data-tab-block="t-question">
                         Технические вопросы
                     </li>
                 </ul>
@@ -1091,11 +1114,8 @@ $image = SI_CurrentPageImage();
                                     </p>
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>
@@ -1104,12 +1124,14 @@ $image = SI_CurrentPageImage();
     <!--===================================================== section review -->
     <section class="section-review" id="review">
         <div class="container">
-            <h1>
+            <h1 class="cre-animate" data-animation="slide-in-from-left"
+                data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                 Отзывы о работе
             </h1>
 
             <div class="review-wrapper">
-                <div class="review-block">
+                <div class="review-block cre-animate" data-animation="slide-in-from-right"
+                     data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                     <div class="title">
                         1500
                     </div>
@@ -1119,7 +1141,8 @@ $image = SI_CurrentPageImage();
                         клиентов
                     </div>
                 </div>
-                <div class="review-block">
+                <div class="review-block cre-animate" data-animation="slide-in-from-right"
+                     data-speed="1000" data-delay="600" data-offset="90%" data-easing="easeOut">
                     <div class="title">
                         1500
                     </div>
@@ -1129,7 +1152,8 @@ $image = SI_CurrentPageImage();
                         клиентов
                     </div>
                 </div>
-                <div class="review-block">
+                <div class="review-block cre-animate" data-animation="slide-in-from-right"
+                     data-speed="1000" data-delay="900" data-offset="90%" data-easing="easeOut">
                     <div class="title">
                         1500
                     </div>
@@ -1216,7 +1240,8 @@ $image = SI_CurrentPageImage();
     <!--===================================================== section experience -->
     <section class="section-experience" id="experience">
         <div class="container">
-            <h1>
+            <h1 class="cre-animate" data-animation="slide-in-from-left"
+                data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                 Обладаем большим опытом
             </h1>
 
@@ -1283,19 +1308,23 @@ $image = SI_CurrentPageImage();
     <!--===================================================== section data -->
     <section class="section-data" id="data">
         <div class="container">
-            <h1>
+            <h1 class="cre-animate" data-animation="slide-in-from-left"
+                data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                 О дата-центре
             </h1>
 
-            <div class="sub_title">
+            <div class="sub_title cre-animate" data-animation="slide-in-from-right"
+                 data-speed="1000" data-delay="600" data-offset="90%" data-easing="easeOut">
                 Архитектурно ЦОД представляет собой конструкцию из трех модулей по три этажа. Один этаж — это два (Блок
                 А2) или три (Блоки А1, А3) машинных зала, которые соединяются с технологическими помещениями.
             </div>
 
-            <a href="#" class="btn btn-grey">
+            <a href="#" class="btn btn-grey cre-animate" data-animation="slide-in-from-left"
+               data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                 Малый бизнес
             </a>
-            <a href="#" class="btn btn-grey i-1">
+            <a href="#" class="btn btn-grey i-1 cre-animate" data-animation="slide-in-from-right"
+               data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                 Машинный зал
             </a>
         </div>
@@ -1346,7 +1375,8 @@ $image = SI_CurrentPageImage();
     <!--===================================================== section square -->
     <section class="section-square" id="square">
         <div class="container">
-            <div class="square-wrapper">
+            <div class="square-wrapper cre-animate" data-animation="slide-in-from-left"
+                 data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                 <div class="square-block">
                     <div class="title">
                         2 Га
@@ -1357,7 +1387,7 @@ $image = SI_CurrentPageImage();
                         участок
                     </div>
                 </div>
-                <div class="square-block">
+                <div class="square-block i-1">
                     <div class="title">
                         18 800 м2
                     </div>
@@ -1378,7 +1408,8 @@ $image = SI_CurrentPageImage();
                     </div>
                 </div>
             </div>
-            <div class="square-wrapper">
+            <div class="square-wrapper m-1 cre-animate" data-animation="slide-in-from-right"
+                 data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                 <div class="square-block">
                     <div class="title">
                         4 460 м2
@@ -1389,7 +1420,7 @@ $image = SI_CurrentPageImage();
                         залов
                     </div>
                 </div>
-                <div class="square-block">
+                <div class="square-block i-1">
                     <div class="title">
                         350 м2
                     </div>
@@ -1416,12 +1447,14 @@ $image = SI_CurrentPageImage();
     <!--===================================================== section infrastructure -->
     <section class="section-infrastructure" id="infrastructure">
         <div class="container">
-            <h1>
+            <h1 class="cre-animate" data-animation="slide-in-from-left"
+                data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                 Отказоустойчивая <br>
                 инфраструктура
             </h1>
 
-            <div class="infrastructure-wrapper">
+            <div class="infrastructure-wrapper cre-animate" data-animation="slide-in-from-right"
+                 data-speed="1000" data-delay="300" data-offset="90%" data-easing="easeOut">
                 <img src="images/block-img-1.jpg" alt=" " class="infrastructure-img">
                 <div class="infrastructure-block">
                     <div class="title">
@@ -1434,7 +1467,8 @@ $image = SI_CurrentPageImage();
                     </div>
                 </div>
             </div>
-            <div class="infrastructure-wrapper">
+            <div class="infrastructure-wrapper cre-animate" data-animation="slide-in-from-left"
+                 data-speed="1000" data-delay="600" data-offset="90%" data-easing="easeOut">
                 <img src="images/block-img-2.jpg" alt=" " class="infrastructure-img">
                 <div class="infrastructure-block i-2">
                     <div class="title">
@@ -1447,7 +1481,8 @@ $image = SI_CurrentPageImage();
                     </div>
                 </div>
             </div>
-            <div class="infrastructure-wrapper">
+            <div class="infrastructure-wrapper cre-animate" data-animation="slide-in-from-right"
+                 data-speed="1000" data-delay="900" data-offset="90%" data-easing="easeOut">
                 <img src="images/block-img-3.jpg" alt=" " class="infrastructure-img">
                 <div class="infrastructure-block">
                     <div class="title">
@@ -1460,7 +1495,8 @@ $image = SI_CurrentPageImage();
                     </div>
                 </div>
             </div>
-            <div class="infrastructure-wrapper">
+            <div class="infrastructure-wrapper cre-animate" data-animation="slide-in-from-left"
+                 data-speed="1000" data-delay="1200" data-offset="90%" data-easing="easeOut">
                 <img src="images/block-img-4.jpg" alt=" " class="infrastructure-img">
                 <div class="infrastructure-block i-1">
                     <div class="title">
@@ -1545,7 +1581,7 @@ $image = SI_CurrentPageImage();
 
                     <div class="logo-text">
                         ООО "Сток-сервис" <br>
-                        Москва,г. Зеленоград, Проезд №683, д. 8 <br>
+                        Москва,г. Зеленоград, Проезд 683, д. 8 <br>
                         ОГРН: 1234567890123
                     </div>
                 </div>
@@ -1627,7 +1663,6 @@ $image = SI_CurrentPageImage();
                         <div class="col-1-2">
                             <div class="modal-form-title">
                                 Закажите
-                                консультацию
                                 консультацию
                                 ведущего
                                 специалиста
